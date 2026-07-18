@@ -1,25 +1,37 @@
-# Python bytecode and caches
+# Virtual environment
+.venv/
+venv/
+
+# Python cache
 __pycache__/
 *.py[cod]
 *.pyo
-*.pyd
 
-# Virtual environments
-.venv/
-venv/
-env/
+# Build artifacts
+build/
+dist/
+*.egg-info/
 
-# Environment files
-.env
-.env.local
-
-# Logs
-logs/*.log
-
-# Editor settings
+# IDE
 .vscode/
 .idea/
 
-# OS files
+# Environment
+.env
+
+# Logs
+logs/
+*.log
+
+# Test cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS
 .DS_Store
 Thumbs.db
+
+# Data (optional if large/sensitive)
+data/sample_pdfs/
+data/outputs/

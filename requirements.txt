@@ -1,7 +1,79 @@
-# Python dependencies for the project.
-# TODO: Add production and development dependencies as the implementation evolves.
+# ==========================================================
+# SAE Case Summary Automation Pipeline
+# Version 1.0
+# Core Dependencies
+# ==========================================================
 
-# Example placeholders:
-# pandas>=2.2
-# pydantic>=2.8
-# python-dotenv>=1.0
+# -------------------------
+# PDF Processing
+# -------------------------
+pdfplumber>=0.11.4
+PyMuPDF>=1.26.0
+pypdf>=5.8.0
+
+# -------------------------
+# Data Processing
+# -------------------------
+pandas>=2.3.0
+numpy>=2.3.0
+
+# -------------------------
+# Data Validation
+# -------------------------
+pydantic>=2.11.0
+
+# -------------------------
+# Word Document Generation
+# -------------------------
+python-docx>=1.2.0
+
+# -------------------------
+# Environment Variables
+# -------------------------
+python-dotenv>=1.1.0
+
+# -------------------------
+# Logging
+# -------------------------
+loguru>=0.7.3
+
+# -------------------------
+# HTTP Requests (future APIs)
+# -------------------------
+requests>=2.32.0
+
+# -------------------------
+# Fast JSON Serialization
+# -------------------------
+orjson>=3.11.0
+
+# -------------------------
+# Date Utilities
+# -------------------------
+python-dateutil>=2.9.0
+
+# ==========================================================
+# Development Tools
+# ==========================================================
+
+pytest>=8.4.0
+pytest-cov>=6.2.0
+
+black>=25.1.0
+isort>=6.0.0
+flake8>=7.3.0
+mypy>=1.17.0
+
+# ==========================================================
+# Optional (commented for now)
+# Uncomment only if required
+# ==========================================================
+
+# OCR
+# pytesseract
+# pdf2image
+# Pillow
+
+# LLM
+# anthropic
+# openai

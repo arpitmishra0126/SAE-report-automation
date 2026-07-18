@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sae-automation"
+version = "0.1.0"
+description = "Scaffold for a document extraction and automation pipeline"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "TODO: Project Team" }]
+license = { text = "TODO: Add license" }
+dependencies = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

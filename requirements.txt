@@ -1,0 +1,7 @@
+# Python dependencies for the project.
+# TODO: Add production and development dependencies as the implementation evolves.
+
+# Example placeholders:
+# pandas>=2.2
+# pydantic>=2.8
+# python-dotenv>=1.0

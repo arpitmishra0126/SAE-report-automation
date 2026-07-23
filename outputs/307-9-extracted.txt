@@ -1,0 +1,2890 @@
+================================================================================
+PAGE 1
+================================================================================
+
+
+
+================================================================================
+PAGE 2
+================================================================================
+
+
+
+================================================================================
+PAGE 3
+================================================================================
+
+
+
+================================================================================
+PAGE 4
+================================================================================
+
+
+
+================================================================================
+PAGE 5
+================================================================================
+
+ICMR Emollient - Main
+Record ID 307-9 Baby (ID: 12-0009-1) of Goldi
+Maternal History Module
+Record ID
+307-9
+Section A: General Information (Pre-ﬁlled from the form)
+ 
+ 
+Baby's Name
+b/o Goldi
+Hospital Name
+GSVM Medical College
+Hospital Reg No
+20250514243
+Mother's Name
+Goldi
+Fathers Name
+Sumit
+Enrollment Date
+25-09-2025 08:40
+Enrolled Baby's UID
+12-0009-1
+ 
+Section B: Maternal History Details (यह सारी माहिती अस्पताल के रेजिस्ट्रैैशन फॉर्म मे से देख कर भरे)
+5 - Please state age of the mother in completed years.
+[कृपया मां की उम्र पूर्ण वर्षों (पूरे साल) में लिखें।]
+* must provide value
+19
+use M icon next to field for missing values
+6 - Was the mother given antenatal corticosteroids
+before delivery? [क्याा मां को प्रसव से पहले गर्भकालीन स्टेरॉयड
+(Antenatal Steroid) दिया गया था?]
+* must provide value
+हाँ (Yes)
+6.1 - If yes, which steroid was administered? [यदि हाँ, तो
+कौन सा स्टेरॉयड दिया गया था?]
+* must provide value
+बेटामेथासोन (Betamethasone)
+6.2 - How many doses were administered? [कुल कितनी डोज़
+दी गई थीं?]
+* must provide value
+[2]
+1 - Start Time/ Time Stamp of form ﬁlling [फॉर्म भरने का
+शुरूआती समय]
+* must provide value
+25-09-2025 13:14
+3 - Hospital Name and Code [अस्पताल का नाम]
+GSVM Medical College
+4 - Data collector name [डेटा कलेक्टर का नाम
+(सूची से चुनें)]
+* must provide value
+Ambuj Saxena
+3/14/26, 3:58 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=830&page=maternal_history_mo…
+1/3
+
+================================================================================
+PAGE 6
+================================================================================
+
+7 - Did the mother experience fever during pregnancy or
+labour? [क्याा गर्भावस्थाा या प्रसव के दौरान मां को बुखार आया था?]
+* must provide value
+ पहले त्रैैमासिक में (In 1st trimester)
+ दूसरे त्रैैमासिक में (In 2nd trimester)
+ तीसरे त्रैैमासिक में (In 3rd trimester)
+ प्रसव के समय ≥100.4°F (During labour only if
+≥100.4°F)
+ कभी बुखार नहीं हुआ (No fever at all)
+ जानकारी नहीं (Information not available)
+8 - Was there foul-smelling vaginal discharge during
+labour? [क्याा प्रसव के समय दुर्गंधयुक्त स्त्रााव (discharge) था?]
+* must provide value
+हाँ (Yes)
+9 - Was uterine tenderness observed during labour? [क्याा
+गर्भाशय में संवेदनशीलता (uterine tenderness) थी?]
+* must provide value
+नहीं (No)
+10 - Was leaking per vaginum present for more than 24
+hours before delivery? [क्याा प्रसव से पहले 24 घंटे से अधिक
+समय तक पानी की थैली फटी हुई थी?]
+* must provide value
+हाँ (Yes)
+11 - What was the appearance of amniotic ﬂuid at the
+time of delivery? [प्रसव के समय एम्नियोटिक फ्लूूइड (amniotic
+ﬂuid) कैसा था?]
+* must provide value
+साफ (Clear)
+12 - What was the presentation of the baby at birth?
+[नवजात की प्रस्तुति (presentation) क्याा थी?]
+* must provide value
+सिर नीचे (Vertex)
+13 - Type of Labour
+* must provide value
+स्वााभाविक प्रसव (Spontaneous Labour)
+14 - What was the course of complete labour? [प्रसव की
+प्रक्रि
+या कैसी रही?]
+* must provide value
+पहली अवस्थाा लंबी (Prolonged 1st stage)
+15 - Was foetal distress observed during labour? [क्याा भ्रूूण
+में तनाव (foetal distress) के लक्षण थे?]
+* must provide value
+हाँ (Yes)
+Only for Eligible baby
+16 - What was the type of delivery of eligible baby? [प्रसव
+का प्रकार क्याा था?]
+* must provide value
+सामान्य प्रसव (NVD)
+For the eligible baby
+17 - Who assisted the delivery?
+[प्रसव किसके द्वाारा कराया गया था?]
+* must provide value
+ डॉक्टर (Doctor)
+ नर्स (Nurse)
+ एएनएम (ANM)
+ दाई (Dai)
+ परिवार सदस्य (Relative)
+ अन्य (Other):
+3/14/26, 3:58 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=830&page=maternal_history_mo…
+2/3
+
+================================================================================
+PAGE 7
+================================================================================
+
+18 - Is there any signiﬁcant information in the maternal
+sheet
+* must provide value
+नहीं (No)
+20 - Upload the photo/pdf of Section Mother's
+information from the hospital record
+21 - Remarks
+[यह फॉर्म भरते समय कुछ टिप्पणी हो तो वह अंकित कीजिए]
+G.A 33 Weeks 4 Days 
+22 - GPS Latitude
+[जीपीएस लोकेशन]
+26.4536064
+   
+  reset
+23 - GPS Longitude
+[जीपीएस लोकेशन]
+80.314368
+   
+  reset
+Form Status
+Complete?
+Complete
+Goldi Sumit.pdf (0.04 MB)
+Update
+Update
+-- Cancel --
+3/14/26, 3:58 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=830&page=maternal_history_mo…
+3/3
+
+================================================================================
+PAGE 8
+================================================================================
+
+
+
+================================================================================
+PAGE 9
+================================================================================
+
+ICMR Emollient - Main
+Record ID 307-9 Baby (ID: 12-0009-1) of Goldi
+Daily Clinical Monitoring
+Record ID
+307-9
+This form is to be completed daily for all neonates enrolled in the ICMR Emollient Study to screen for signs of
+sepsis or clinical deterioration. It draws information from physician assessments and bedside observations.
+The form should be ﬁlled once every 24 hours using direct clinical evaluation, vital signs, feeding records, and
+laboratory results. All ﬁelds must be completed; select 'Not Observed' if a parameter was not assessed.
+यह फॉर्म ICMR इमोलिएंट अध्ययन में नामांकित सभी नवजात शिशुओं के लिए प्रतिदिन भरना अनिवार्य है, ताकि सेप्सि
+स या स्वाास्थ्य
+गिरावट के लक्षणों की पहचान की जा सके। इसमें चिकित्सक के मूल्यांांकन और बिस्तर के पास की गई देखभाल से जानकारी ली जाती है।
+फॉर्म हर 24 घंटे में एक बार भरना है, जिसमें प्रत्यक्ष जांच, जीवन संकेत, फीडिंंग रिकॉर्ड और लैब रिपोर्ट शामिल हों। सभी प्रश्न भरना
+अनिवार्य है; यदि कोई पैरामीटर नहीं देखा गया हो, तो 'Not Observed' विकल्प चुनें।
+ 
+Baby Details:-
+Baby's Name
+b/o Goldi
+Hospital Name
+GSVM Medical College
+Hospital Reg No
+20250514243
+Mother's Name
+Goldi
+Fathers Name
+Sumit
+Enrollment Date
+25-09-2025 08:40
+Enrolled Baby's UID
+12-0009-1
+ 
+5 - Date of Clinical Monitoring[डेटा कलेक्शन की तारीख
+(DD/MM/YYYY HH:MM)]
+* must provide value
+26-09-2025 12:59
+Time is in 24 hors format. So 2:02 PM would be 14:02. By
+entering 2:02 you refer to 2:02 AM i.e the early morning
+time
+Section B: Vital Status
+If the newborn is in NICU/SNCU, collect details from hospital records or staﬀ. If in the step-down
+unit/mother's side, verify with the mother.
+यदि नवजात एनआईसीयू/एसएनसीयू में है, तो जानकारी अस्पताल के रिकॉर्ड या स्टाफ से लें। यदि बच्चाा स्टेप-डाउन यूनिट या माँ के पास
+है, तो माँ से पुष्टि करें।
+6 - What is the current vital status of the newborn?
+[नवजात की वर्तमान स्थि
+ति क्याा है?]
+* must provide value
+जीवित, Alive
+1 - Start Time/ Time Stamp of form ﬁlling [फॉर्म भरने का
+शुरूआती समय]
+26-09-2025 12:23
+3 - Hospital Name and Code [अस्पताल का नाम]
+GSVM Medical College
+4 - Data collector name [डेटा कलेक्टर का नाम]:
+* must provide value
+Susheel Pal
+3/14/26, 3:59 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=831&page=daily_clinical_monitori…
+1/4
+
+================================================================================
+PAGE 10
+================================================================================
+
+Section C: Discharge and Bed Sharing Status
+6.4 Is the baby discharged/referred out
+[क्याा शिशु को डिस्चार्ज किया गया है / अन्यत्र रेफ़र किया गया है]
+* must provide value
+6.5 - Was the baby sharing bed with other babies?
+[क्याा शिशु अन्य शिशुओं के साथ एक ही बिस्तर साझा कर रहा था?]
+* must provide value
+नहीं (No)
+Section D: Baby Weight
+7 - Have you taken the weight of the newborn?
+[क्याा आप नवजात का वज़न मापने में सक्षम थे?]
+हाँ, Yes
+7.1 - Measure the weight of the newborn [शिशु का वज़न
+मापें] (#1)
+* must provide value
+1490
+7.2 - Repeat: Measure the weight of the newborn again
+[दोबारा वज़न मापें] (#2)
+* must provide value
+1490
+Section E: Other information- ﬁll the information based on the observation during the assessment (अन्य
+जानकारी (मूल्यांांकन के दौरान देखी गई स्थि
+ति पर आधारित))
+This section captures additional observations made during the assessment regarding the newborn's ongoing
+care and supportive interventions. The data should be recorded based solely on direct observation at the
+time of the visit. Do not rely on medical records unless the intervention is not visually evident.
+यह अनुभाग मूल्यांांकन के दौरान नवजात को दी जा रही देखभाल और सहायक उपायों से संबंधित अतिरिक्त अवलोकनों को दर्ज करता है।
+जानकारी केवल निरीक्षण के समय देखी गई स्थि
+ति के आधार पर भरी जानी चाहिए। जब तक किसी हस्तक्षेप को देखा न जा सके, तब तक
+फाइल पर निर्भर न रहें।
+8 - Is the newborn kept on incubator support? [क्याा नवजात
+इनक्यूूबेटर सपोर्ट पर है?]
+* must provide value
+नहीं (No)
+9 - Is the newborn being prescribed any medications?
+[क्याा नवजात को कोई दवाइयां दी जा रही हैं?]
+* must provide value
+हाँ (Yes)
+10 - Please check the ﬁle and state all the medicines the
+newborn is being prescribed. [फाइल जांचें और सभी दवाइयों के
+नाम लिखें जो नवजात को दी जा रही हैं।]
+Dobuta 0.1ML, Capnea 8mg
+Section F: Kangaroo Mother Care (KMC) Practices
+This section documents whether KMC was practised during the past 24 hours and who provided it. The
+average duration of KMC should also be recorded. This information may be obtained through observation,
+medical staﬀ notes, or direct inquiry with the caregiver.
+यह अनुभाग पिछले 24 घंटों में नवजात को दी गई KMC की जानकारी दर्ज करता है और यह भी कि इसे किसने प्रदान किया। KMC की
+औसत अवधि भी दर्ज की जानी चाहिए। यह जानकारी निरीक्षण, अस्पताल स्टाफ की टिप्पणी या देखभालकर्ता से सीधे पूछकर प्राप्त की
+जा सकती है।
+3/14/26, 3:59 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=831&page=daily_clinical_monitori…
+2/4
+
+================================================================================
+PAGE 11
+================================================================================
+
+11 - Has Kangaroo Mother Care (KMC) been provided to
+the newborn in last 24 hours? [क्याा पिछले 24 घंटे में नवजात को
+कंगारू मदर केयर (KMC) दी गई है?]
+* must provide value
+नहीं (No)
+11.3 If No KMC, please specify the reason
+* must provide value
+ नवजात इनवेसिव वेंटिलेटर पर था, Newborn was
+on invasive ventilator
+ नवजात नॉन-इनवेसिव वेंटिलेशन पर था, Newborn
+was on non-invasive ventilation
+ चिकित्सक द्वाारा मना किया गया, Doctor did not
+allow
+ न्यूनतम हैंडलिंंग आवश्यक थी / स्थि
+ति गंभीर थी,
+Minimal handling required / Critically ill
+ मॉनिटरिंंग उपकरण जुड़ेे थे, Multiple
+probes/devices attached
+ इंट्राावेनस इन्फ्यूूजन चल रहा था, Receiving IV
+infusion
+ अन्य - कृपया स्पष्ट करें, Other - please specify
+Section G: Feeding Module
+12 - What was the newborn fed in the last 24 hours?
+(Tick all applicable options)
+[पिछले 24 घंटे में नवजात को क्याा-क्याा पिलाया/दिया गया? (सभी लागू
+विकल्प चुनें)] 
+* must provide value
+ मां का दूध, (Mother's breast milk)
+ निकाला हुआ मां का दूध (EBM), (Expressed
+breast milk)
+ डोनर दूध, (Donor breast milk)
+ फॉर्मूला दूध, (Formula milk)
+ इंट्राावीनस फ्लूूइड्स, (Intravenous ﬂuids)
+ टीपीएन, (Total Parenteral Nutrition)
+ ग्लूूकोज पानी, (Glucose water)
+ दवाइयां, (Medicines)
+ अन्य - कृपया स्पष्ट करें, (Other - please specify)
+12.2 - How was the feed provided to the newborn?
+[नवजात को खाना/दूध कैसे दिया गया? (सभी लागू तरीकों पर टिक
+करें)]
+(Tick all applicable methods used in the last 24 hours)
+* must provide value
+ सीधे स्तनपान, (Direct breastfeeding)
+ चम्मच / पलादे / कप / बोतल, (Spoon / Paladai /
+Cup / Bottle feeding)
+ नासोगैस्ट्
+रिक ट्यूूब से, (Nasogastric tube feeding)
+ ओरोगैस्ट्
+रिक ट्यूूब से, (Orogastric tube feeding)
+ इंट्राावीनस, (Intravenous)
+ सिरिंंज / ड्रॉॉपर से, (Syringe / Dropper)
+ अन्य तरीका - कृपया स्पष्ट करें, (Other method -
+please specify)
+Please provide the quantities:-
+Enteral feeds in last 24 hours (in ml)
+[पिछले 24 घंटों में एंटरल फीड (मिलीलीटर में)]
+16
+पिछले 24 घंटों में टीपीएन (एमएल में)
+ 
+15 - Total Fluid Intake in ml in last 24 hours
+16
+  
+Section H: Remarks and GPS
+3/14/26, 3:59 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=831&page=daily_clinical_monitori…
+3/4
+
+================================================================================
+PAGE 12
+================================================================================
+
+16 - Remarks [यह फॉर्म भरते समय कुछ टिप्पणी हो तो वह अंकित
+कीजिए]
+Baby Phototherephy par hai
+17 - GPS Latitude [जीपीएस लोकेशन]
+26.47867933321999   
+  reset
+18 - GPS Longitude [जीपीएस लोकेशन]
+81.0090496
+   
+  reset
+Form Status
+Complete?
+Complete
+Update
+Update
+-- Cancel --
+3/14/26, 3:59 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=831&page=daily_clinical_monitori…
+4/4
+
+================================================================================
+PAGE 13
+================================================================================
+
+ICMR Emollient - Main
+Record ID 307-9 Baby (ID: 12-0009-1) of Goldi
+Daily Clinical Monitoring
+Record ID
+307-9
+This form is to be completed daily for all neonates enrolled in the ICMR Emollient Study to screen for signs of
+sepsis or clinical deterioration. It draws information from physician assessments and bedside observations.
+The form should be ﬁlled once every 24 hours using direct clinical evaluation, vital signs, feeding records, and
+laboratory results. All ﬁelds must be completed; select 'Not Observed' if a parameter was not assessed.
+यह फॉर्म ICMR इमोलिएंट अध्ययन में नामांकित सभी नवजात शिशुओं के लिए प्रतिदिन भरना अनिवार्य है, ताकि सेप्सि
+स या स्वाास्थ्य
+गिरावट के लक्षणों की पहचान की जा सके। इसमें चिकित्सक के मूल्यांांकन और बिस्तर के पास की गई देखभाल से जानकारी ली जाती है।
+फॉर्म हर 24 घंटे में एक बार भरना है, जिसमें प्रत्यक्ष जांच, जीवन संकेत, फीडिंंग रिकॉर्ड और लैब रिपोर्ट शामिल हों। सभी प्रश्न भरना
+अनिवार्य है; यदि कोई पैरामीटर नहीं देखा गया हो, तो 'Not Observed' विकल्प चुनें।
+ 
+Baby Details:-
+Baby's Name
+b/o Goldi
+Hospital Name
+GSVM Medical College
+Hospital Reg No
+20250514243
+Mother's Name
+Goldi
+Fathers Name
+Sumit
+Enrollment Date
+25-09-2025 08:40
+Enrolled Baby's UID
+12-0009-1
+ 
+5 - Date of Clinical Monitoring[डेटा कलेक्शन की तारीख
+(DD/MM/YYYY HH:MM)]
+* must provide value
+27-09-2025 12:57
+Time is in 24 hors format. So 2:02 PM would be 14:02. By
+entering 2:02 you refer to 2:02 AM i.e the early morning
+time
+Section B: Vital Status
+If the newborn is in NICU/SNCU, collect details from hospital records or staﬀ. If in the step-down
+unit/mother's side, verify with the mother.
+यदि नवजात एनआईसीयू/एसएनसीयू में है, तो जानकारी अस्पताल के रिकॉर्ड या स्टाफ से लें। यदि बच्चाा स्टेप-डाउन यूनिट या माँ के पास
+है, तो माँ से पुष्टि करें।
+6 - What is the current vital status of the newborn?
+[नवजात की वर्तमान स्थि
+ति क्याा है?]
+* must provide value
+जीवित, Alive
+1 - Start Time/ Time Stamp of form ﬁlling [फॉर्म भरने का
+शुरूआती समय]
+27-09-2025 12:57
+3 - Hospital Name and Code [अस्पताल का नाम]
+GSVM Medical College
+4 - Data collector name [डेटा कलेक्टर का नाम]:
+* must provide value
+Ambuj Saxena
+3/14/26, 4:00 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=832&page=daily_clinical_monitori…
+1/4
+
+================================================================================
+PAGE 14
+================================================================================
+
+Section C: Discharge and Bed Sharing Status
+6.4 Is the baby discharged/referred out
+[क्याा शिशु को डिस्चार्ज किया गया है / अन्यत्र रेफ़र किया गया है]
+* must provide value
+6.5 - Was the baby sharing bed with other babies?
+[क्याा शिशु अन्य शिशुओं के साथ एक ही बिस्तर साझा कर रहा था?]
+* must provide value
+नहीं (No)
+Section D: Baby Weight
+7 - Have you taken the weight of the newborn?
+[क्याा आप नवजात का वज़न मापने में सक्षम थे?]
+नहीं, No
+7.3 - Please state the reason why you were not able to
+weigh the newborn. [यदि आप नवजात का वज़न नहीं कर पाए, तो
+कारण बताएं]
+* must provide value
+ नवजात इनवेसिव वेंटिलेटर पर था, Newborn was
+on invasive ventilator
+ नवजात नॉन-इनवेसिव वेंटिलेशन पर था, Newborn
+was on non-invasive ventilation
+ चिकित्सक द्वाारा मना किया गया, Doctor did not
+allow
+ न्यूनतम हैंडलिंंग आवश्यक थी / स्थि
+ति गंभीर थी,
+Minimal handling required / Critically ill
+ मॉनिटरिंंग उपकरण जुड़ेे थे, Multiple
+probes/devices attached
+ इंट्राावेनस इन्फ्यूूजन चल रहा था, Receiving IV
+infusion
+ अन्य - कृपया स्पष्ट करें, Other - please specify
+Section E: Other information- ﬁll the information based on the observation during the assessment (अन्य
+जानकारी (मूल्यांांकन के दौरान देखी गई स्थि
+ति पर आधारित))
+This section captures additional observations made during the assessment regarding the newborn's ongoing
+care and supportive interventions. The data should be recorded based solely on direct observation at the
+time of the visit. Do not rely on medical records unless the intervention is not visually evident.
+यह अनुभाग मूल्यांांकन के दौरान नवजात को दी जा रही देखभाल और सहायक उपायों से संबंधित अतिरिक्त अवलोकनों को दर्ज करता है।
+जानकारी केवल निरीक्षण के समय देखी गई स्थि
+ति के आधार पर भरी जानी चाहिए। जब तक किसी हस्तक्षेप को देखा न जा सके, तब तक
+फाइल पर निर्भर न रहें।
+8 - Is the newborn kept on incubator support? [क्याा नवजात
+इनक्यूूबेटर सपोर्ट पर है?]
+* must provide value
+हाँ (Yes)
+9 - Is the newborn being prescribed any medications?
+[क्याा नवजात को कोई दवाइयां दी जा रही हैं?]
+* must provide value
+हाँ (Yes)
+10 - Please check the ﬁle and state all the medicines the
+newborn is being prescribed. [फाइल जांचें और सभी दवाइयों के
+नाम लिखें जो नवजात को दी जा रही हैं।]
+Inj Capnea 08 Mg OD, Inj Pipzo 150 Mg TD
+Section F: Kangaroo Mother Care (KMC) Practices
+This section documents whether KMC was practised during the past 24 hours and who provided it. The
+average duration of KMC should also be recorded. This information may be obtained through observation,
+3/14/26, 4:00 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=832&page=daily_clinical_monitori…
+2/4
+
+================================================================================
+PAGE 15
+================================================================================
+
+medical staﬀ notes, or direct inquiry with the caregiver.
+यह अनुभाग पिछले 24 घंटों में नवजात को दी गई KMC की जानकारी दर्ज करता है और यह भी कि इसे किसने प्रदान किया। KMC की
+औसत अवधि भी दर्ज की जानी चाहिए। यह जानकारी निरीक्षण, अस्पताल स्टाफ की टिप्पणी या देखभालकर्ता से सीधे पूछकर प्राप्त की
+जा सकती है।
+11 - Has Kangaroo Mother Care (KMC) been provided to
+the newborn in last 24 hours? [क्याा पिछले 24 घंटे में नवजात को
+कंगारू मदर केयर (KMC) दी गई है?]
+* must provide value
+नहीं (No)
+11.3 If No KMC, please specify the reason
+* must provide value
+ नवजात इनवेसिव वेंटिलेटर पर था, Newborn was
+on invasive ventilator
+ नवजात नॉन-इनवेसिव वेंटिलेशन पर था, Newborn
+was on non-invasive ventilation
+ चिकित्सक द्वाारा मना किया गया, Doctor did not
+allow
+ न्यूनतम हैंडलिंंग आवश्यक थी / स्थि
+ति गंभीर थी,
+Minimal handling required / Critically ill
+ मॉनिटरिंंग उपकरण जुड़ेे थे, Multiple
+probes/devices attached
+ इंट्राावेनस इन्फ्यूूजन चल रहा था, Receiving IV
+infusion
+ अन्य - कृपया स्पष्ट करें, Other - please specify
+Section G: Feeding Module
+12 - What was the newborn fed in the last 24 hours?
+(Tick all applicable options)
+[पिछले 24 घंटे में नवजात को क्याा-क्याा पिलाया/दिया गया? (सभी लागू
+विकल्प चुनें)] 
+* must provide value
+ मां का दूध, (Mother's breast milk)
+ निकाला हुआ मां का दूध (EBM), (Expressed
+breast milk)
+ डोनर दूध, (Donor breast milk)
+ फॉर्मूला दूध, (Formula milk)
+ इंट्राावीनस फ्लूूइड्स, (Intravenous ﬂuids)
+ टीपीएन, (Total Parenteral Nutrition)
+ ग्लूूकोज पानी, (Glucose water)
+ दवाइयां, (Medicines)
+ अन्य - कृपया स्पष्ट करें, (Other - please specify)
+12.2 - How was the feed provided to the newborn?
+[नवजात को खाना/दूध कैसे दिया गया? (सभी लागू तरीकों पर टिक
+करें)]
+(Tick all applicable methods used in the last 24 hours)
+* must provide value
+ सीधे स्तनपान, (Direct breastfeeding)
+ चम्मच / पलादे / कप / बोतल, (Spoon / Paladai /
+Cup / Bottle feeding)
+ नासोगैस्ट्
+रिक ट्यूूब से, (Nasogastric tube feeding)
+ ओरोगैस्ट्
+रिक ट्यूूब से, (Orogastric tube feeding)
+ इंट्राावीनस, (Intravenous)
+ सिरिंंज / ड्रॉॉपर से, (Syringe / Dropper)
+ अन्य तरीका - कृपया स्पष्ट करें, (Other method -
+please specify)
+Please provide the quantities:-
+Enteral feeds in last 24 hours (in ml)
+[पिछले 24 घंटों में एंटरल फीड (मिलीलीटर में)]
+NI
+No information (NI)
+3/14/26, 4:00 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=832&page=daily_clinical_monitori…
+3/4
+
+================================================================================
+PAGE 16
+================================================================================
+
+पिछले 24 घंटों में टीपीएन (एमएल में)
+ 
+15 - Total Fluid Intake in ml in last 24 hours
+  
+Section H: Remarks and GPS
+16 - Remarks [यह फॉर्म भरते समय कुछ टिप्पणी हो तो वह अंकित
+कीजिए]
+Baby On Invasive Ventilation 
+17 - GPS Latitude [जीपीएस लोकेशन]
+26.4699904
+   
+  reset
+18 - GPS Longitude [जीपीएस लोकेशन]
+80.314368
+   
+  reset
+Form Status
+Complete?
+Complete
+Update
+Update
+-- Cancel --
+3/14/26, 4:00 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=832&page=daily_clinical_monitori…
+4/4
+
+================================================================================
+PAGE 17
+================================================================================
+
+ICMR Emollient - Main
+Record ID 307-9 Baby (ID: 12-0009-1) of Goldi
+Daily Clinical Monitoring
+Record ID
+307-9
+This form is to be completed daily for all neonates enrolled in the ICMR Emollient Study to screen for signs of
+sepsis or clinical deterioration. It draws information from physician assessments and bedside observations.
+The form should be ﬁlled once every 24 hours using direct clinical evaluation, vital signs, feeding records, and
+laboratory results. All ﬁelds must be completed; select 'Not Observed' if a parameter was not assessed.
+यह फॉर्म ICMR इमोलिएंट अध्ययन में नामांकित सभी नवजात शिशुओं के लिए प्रतिदिन भरना अनिवार्य है, ताकि सेप्सि
+स या स्वाास्थ्य
+गिरावट के लक्षणों की पहचान की जा सके। इसमें चिकित्सक के मूल्यांांकन और बिस्तर के पास की गई देखभाल से जानकारी ली जाती है।
+फॉर्म हर 24 घंटे में एक बार भरना है, जिसमें प्रत्यक्ष जांच, जीवन संकेत, फीडिंंग रिकॉर्ड और लैब रिपोर्ट शामिल हों। सभी प्रश्न भरना
+अनिवार्य है; यदि कोई पैरामीटर नहीं देखा गया हो, तो 'Not Observed' विकल्प चुनें।
+ 
+Baby Details:-
+Baby's Name
+b/o Goldi
+Hospital Name
+GSVM Medical College
+Hospital Reg No
+20250514243
+Mother's Name
+Goldi
+Fathers Name
+Sumit
+Enrollment Date
+25-09-2025 08:40
+Enrolled Baby's UID
+12-0009-1
+ 
+5 - Date of Clinical Monitoring[डेटा कलेक्शन की तारीख
+(DD/MM/YYYY HH:MM)]
+* must provide value
+28-09-2025 11:19
+Time is in 24 hors format. So 2:02 PM would be 14:02. By
+entering 2:02 you refer to 2:02 AM i.e the early morning
+time
+Section B: Vital Status
+If the newborn is in NICU/SNCU, collect details from hospital records or staﬀ. If in the step-down
+unit/mother's side, verify with the mother.
+यदि नवजात एनआईसीयू/एसएनसीयू में है, तो जानकारी अस्पताल के रिकॉर्ड या स्टाफ से लें। यदि बच्चाा स्टेप-डाउन यूनिट या माँ के पास
+है, तो माँ से पुष्टि करें।
+6 - What is the current vital status of the newborn?
+[नवजात की वर्तमान स्थि
+ति क्याा है?]
+* must provide value
+जीवित, Alive
+1 - Start Time/ Time Stamp of form ﬁlling [फॉर्म भरने का
+शुरूआती समय]
+28-09-2025 11:19
+3 - Hospital Name and Code [अस्पताल का नाम]
+GSVM Medical College
+4 - Data collector name [डेटा कलेक्टर का नाम]:
+* must provide value
+Ambuj Saxena
+3/14/26, 4:00 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=833&page=daily_clinical_monitori…
+1/4
+
+================================================================================
+PAGE 18
+================================================================================
+
+Section C: Discharge and Bed Sharing Status
+6.4 Is the baby discharged/referred out
+[क्याा शिशु को डिस्चार्ज किया गया है / अन्यत्र रेफ़र किया गया है]
+* must provide value
+6.5 - Was the baby sharing bed with other babies?
+[क्याा शिशु अन्य शिशुओं के साथ एक ही बिस्तर साझा कर रहा था?]
+* must provide value
+नहीं (No)
+Section D: Baby Weight
+7 - Have you taken the weight of the newborn?
+[क्याा आप नवजात का वज़न मापने में सक्षम थे?]
+नहीं, No
+7.3 - Please state the reason why you were not able to
+weigh the newborn. [यदि आप नवजात का वज़न नहीं कर पाए, तो
+कारण बताएं]
+* must provide value
+ नवजात इनवेसिव वेंटिलेटर पर था, Newborn was
+on invasive ventilator
+ नवजात नॉन-इनवेसिव वेंटिलेशन पर था, Newborn
+was on non-invasive ventilation
+ चिकित्सक द्वाारा मना किया गया, Doctor did not
+allow
+ न्यूनतम हैंडलिंंग आवश्यक थी / स्थि
+ति गंभीर थी,
+Minimal handling required / Critically ill
+ मॉनिटरिंंग उपकरण जुड़ेे थे, Multiple
+probes/devices attached
+ इंट्राावेनस इन्फ्यूूजन चल रहा था, Receiving IV
+infusion
+ अन्य - कृपया स्पष्ट करें, Other - please specify
+Section E: Other information- ﬁll the information based on the observation during the assessment (अन्य
+जानकारी (मूल्यांांकन के दौरान देखी गई स्थि
+ति पर आधारित))
+This section captures additional observations made during the assessment regarding the newborn's ongoing
+care and supportive interventions. The data should be recorded based solely on direct observation at the
+time of the visit. Do not rely on medical records unless the intervention is not visually evident.
+यह अनुभाग मूल्यांांकन के दौरान नवजात को दी जा रही देखभाल और सहायक उपायों से संबंधित अतिरिक्त अवलोकनों को दर्ज करता है।
+जानकारी केवल निरीक्षण के समय देखी गई स्थि
+ति के आधार पर भरी जानी चाहिए। जब तक किसी हस्तक्षेप को देखा न जा सके, तब तक
+फाइल पर निर्भर न रहें।
+8 - Is the newborn kept on incubator support? [क्याा नवजात
+इनक्यूूबेटर सपोर्ट पर है?]
+* must provide value
+हाँ (Yes)
+9 - Is the newborn being prescribed any medications?
+[क्याा नवजात को कोई दवाइयां दी जा रही हैं?]
+* must provide value
+हाँ (Yes)
+10 - Please check the ﬁle and state all the medicines the
+newborn is being prescribed. [फाइल जांचें और सभी दवाइयों के
+नाम लिखें जो नवजात को दी जा रही हैं।]
+Inj Capnea 08 Mg OD, Inj Pipzo 150 Mg TD
+Section F: Kangaroo Mother Care (KMC) Practices
+This section documents whether KMC was practised during the past 24 hours and who provided it. The
+average duration of KMC should also be recorded. This information may be obtained through observation,
+3/14/26, 4:00 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=833&page=daily_clinical_monitori…
+2/4
+
+================================================================================
+PAGE 19
+================================================================================
+
+medical staﬀ notes, or direct inquiry with the caregiver.
+यह अनुभाग पिछले 24 घंटों में नवजात को दी गई KMC की जानकारी दर्ज करता है और यह भी कि इसे किसने प्रदान किया। KMC की
+औसत अवधि भी दर्ज की जानी चाहिए। यह जानकारी निरीक्षण, अस्पताल स्टाफ की टिप्पणी या देखभालकर्ता से सीधे पूछकर प्राप्त की
+जा सकती है।
+11 - Has Kangaroo Mother Care (KMC) been provided to
+the newborn in last 24 hours? [क्याा पिछले 24 घंटे में नवजात को
+कंगारू मदर केयर (KMC) दी गई है?]
+* must provide value
+नहीं (No)
+11.3 If No KMC, please specify the reason
+* must provide value
+ नवजात इनवेसिव वेंटिलेटर पर था, Newborn was
+on invasive ventilator
+ नवजात नॉन-इनवेसिव वेंटिलेशन पर था, Newborn
+was on non-invasive ventilation
+ चिकित्सक द्वाारा मना किया गया, Doctor did not
+allow
+ न्यूनतम हैंडलिंंग आवश्यक थी / स्थि
+ति गंभीर थी,
+Minimal handling required / Critically ill
+ मॉनिटरिंंग उपकरण जुड़ेे थे, Multiple
+probes/devices attached
+ इंट्राावेनस इन्फ्यूूजन चल रहा था, Receiving IV
+infusion
+ अन्य - कृपया स्पष्ट करें, Other - please specify
+Section G: Feeding Module
+12 - What was the newborn fed in the last 24 hours?
+(Tick all applicable options)
+[पिछले 24 घंटे में नवजात को क्याा-क्याा पिलाया/दिया गया? (सभी लागू
+विकल्प चुनें)] 
+* must provide value
+ मां का दूध, (Mother's breast milk)
+ निकाला हुआ मां का दूध (EBM), (Expressed
+breast milk)
+ डोनर दूध, (Donor breast milk)
+ फॉर्मूला दूध, (Formula milk)
+ इंट्राावीनस फ्लूूइड्स, (Intravenous ﬂuids)
+ टीपीएन, (Total Parenteral Nutrition)
+ ग्लूूकोज पानी, (Glucose water)
+ दवाइयां, (Medicines)
+ अन्य - कृपया स्पष्ट करें, (Other - please specify)
+12.2 - How was the feed provided to the newborn?
+[नवजात को खाना/दूध कैसे दिया गया? (सभी लागू तरीकों पर टिक
+करें)]
+(Tick all applicable methods used in the last 24 hours)
+* must provide value
+ सीधे स्तनपान, (Direct breastfeeding)
+ चम्मच / पलादे / कप / बोतल, (Spoon / Paladai /
+Cup / Bottle feeding)
+ नासोगैस्ट्
+रिक ट्यूूब से, (Nasogastric tube feeding)
+ ओरोगैस्ट्
+रिक ट्यूूब से, (Orogastric tube feeding)
+ इंट्राावीनस, (Intravenous)
+ सिरिंंज / ड्रॉॉपर से, (Syringe / Dropper)
+ अन्य तरीका - कृपया स्पष्ट करें, (Other method -
+please specify)
+Please provide the quantities:-
+Enteral feeds in last 24 hours (in ml)
+[पिछले 24 घंटों में एंटरल फीड (मिलीलीटर में)]
+NI
+No information (NI)
+3/14/26, 4:00 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=833&page=daily_clinical_monitori…
+3/4
+
+================================================================================
+PAGE 20
+================================================================================
+
+पिछले 24 घंटों में टीपीएन (एमएल में)
+ 
+15 - Total Fluid Intake in ml in last 24 hours
+  
+Section H: Remarks and GPS
+16 - Remarks [यह फॉर्म भरते समय कुछ टिप्पणी हो तो वह अंकित
+कीजिए]
+Baby On Invasive Ventilation 
+17 - GPS Latitude [जीपीएस लोकेशन]
+26.4870674
+   
+  reset
+18 - GPS Longitude [जीपीएस लोकेशन]
+80.3491599
+   
+  reset
+Form Status
+Complete?
+Complete
+Update
+Update
+-- Cancel --
+3/14/26, 4:00 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=833&page=daily_clinical_monitori…
+4/4
+
+================================================================================
+PAGE 21
+================================================================================
+
+ICMR Emollient - Main
+Record ID 307-9 Baby (ID: 12-0009-1) of Goldi
+Daily Clinical Monitoring
+Record ID
+307-9
+This form is to be completed daily for all neonates enrolled in the ICMR Emollient Study to screen for signs of
+sepsis or clinical deterioration. It draws information from physician assessments and bedside observations.
+The form should be ﬁlled once every 24 hours using direct clinical evaluation, vital signs, feeding records, and
+laboratory results. All ﬁelds must be completed; select 'Not Observed' if a parameter was not assessed.
+यह फॉर्म ICMR इमोलिएंट अध्ययन में नामांकित सभी नवजात शिशुओं के लिए प्रतिदिन भरना अनिवार्य है, ताकि सेप्सि
+स या स्वाास्थ्य
+गिरावट के लक्षणों की पहचान की जा सके। इसमें चिकित्सक के मूल्यांांकन और बिस्तर के पास की गई देखभाल से जानकारी ली जाती है।
+फॉर्म हर 24 घंटे में एक बार भरना है, जिसमें प्रत्यक्ष जांच, जीवन संकेत, फीडिंंग रिकॉर्ड और लैब रिपोर्ट शामिल हों। सभी प्रश्न भरना
+अनिवार्य है; यदि कोई पैरामीटर नहीं देखा गया हो, तो 'Not Observed' विकल्प चुनें।
+ 
+Baby Details:-
+Baby's Name
+b/o Goldi
+Hospital Name
+GSVM Medical College
+Hospital Reg No
+20250514243
+Mother's Name
+Goldi
+Fathers Name
+Sumit
+Enrollment Date
+25-09-2025 08:40
+Enrolled Baby's UID
+12-0009-1
+ 
+5 - Date of Clinical Monitoring[डेटा कलेक्शन की तारीख
+(DD/MM/YYYY HH:MM)]
+* must provide value
+29-09-2025 16:05
+Time is in 24 hors format. So 2:02 PM would be 14:02. By
+entering 2:02 you refer to 2:02 AM i.e the early morning
+time
+Section B: Vital Status
+If the newborn is in NICU/SNCU, collect details from hospital records or staﬀ. If in the step-down
+unit/mother's side, verify with the mother.
+यदि नवजात एनआईसीयू/एसएनसीयू में है, तो जानकारी अस्पताल के रिकॉर्ड या स्टाफ से लें। यदि बच्चाा स्टेप-डाउन यूनिट या माँ के पास
+है, तो माँ से पुष्टि करें।
+6 - What is the current vital status of the newborn?
+[नवजात की वर्तमान स्थि
+ति क्याा है?]
+* must provide value
+जीवित, Alive
+1 - Start Time/ Time Stamp of form ﬁlling [फॉर्म भरने का
+शुरूआती समय]
+29-09-2025 16:05
+3 - Hospital Name and Code [अस्पताल का नाम]
+GSVM Medical College
+4 - Data collector name [डेटा कलेक्टर का नाम]:
+* must provide value
+Ambuj Saxena
+3/14/26, 4:00 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=834&page=daily_clinical_monitori…
+1/4
+
+================================================================================
+PAGE 22
+================================================================================
+
+Section C: Discharge and Bed Sharing Status
+6.4 Is the baby discharged/referred out
+[क्याा शिशु को डिस्चार्ज किया गया है / अन्यत्र रेफ़र किया गया है]
+* must provide value
+नहीं (No)
+6.5 - Was the baby sharing bed with other babies?
+[क्याा शिशु अन्य शिशुओं के साथ एक ही बिस्तर साझा कर रहा था?]
+* must provide value
+नहीं (No)
+Section D: Baby Weight
+7 - Have you taken the weight of the newborn?
+[क्याा आप नवजात का वज़न मापने में सक्षम थे?]
+नहीं, No
+7.3 - Please state the reason why you were not able to
+weigh the newborn. [यदि आप नवजात का वज़न नहीं कर पाए, तो
+कारण बताएं]
+* must provide value
+ नवजात इनवेसिव वेंटिलेटर पर था, Newborn was
+on invasive ventilator
+ नवजात नॉन-इनवेसिव वेंटिलेशन पर था, Newborn
+was on non-invasive ventilation
+ चिकित्सक द्वाारा मना किया गया, Doctor did not
+allow
+ न्यूनतम हैंडलिंंग आवश्यक थी / स्थि
+ति गंभीर थी,
+Minimal handling required / Critically ill
+ मॉनिटरिंंग उपकरण जुड़ेे थे, Multiple
+probes/devices attached
+ इंट्राावेनस इन्फ्यूूजन चल रहा था, Receiving IV
+infusion
+ अन्य - कृपया स्पष्ट करें, Other - please specify
+Section E: Other information- ﬁll the information based on the observation during the assessment (अन्य
+जानकारी (मूल्यांांकन के दौरान देखी गई स्थि
+ति पर आधारित))
+This section captures additional observations made during the assessment regarding the newborn's ongoing
+care and supportive interventions. The data should be recorded based solely on direct observation at the
+time of the visit. Do not rely on medical records unless the intervention is not visually evident.
+यह अनुभाग मूल्यांांकन के दौरान नवजात को दी जा रही देखभाल और सहायक उपायों से संबंधित अतिरिक्त अवलोकनों को दर्ज करता है।
+जानकारी केवल निरीक्षण के समय देखी गई स्थि
+ति के आधार पर भरी जानी चाहिए। जब तक किसी हस्तक्षेप को देखा न जा सके, तब तक
+फाइल पर निर्भर न रहें।
+8 - Is the newborn kept on incubator support? [क्याा नवजात
+इनक्यूूबेटर सपोर्ट पर है?]
+* must provide value
+हाँ (Yes)
+9 - Is the newborn being prescribed any medications?
+[क्याा नवजात को कोई दवाइयां दी जा रही हैं?]
+* must provide value
+हाँ (Yes)
+10 - Please check the ﬁle and state all the medicines the
+newborn is being prescribed. [फाइल जांचें और सभी दवाइयों के
+नाम लिखें जो नवजात को दी जा रही हैं।]
+Inj Mero 60 Mg TDS, Inj Vanco 30 Mg TDS, 
+Section F: Kangaroo Mother Care (KMC) Practices
+This section documents whether KMC was practised during the past 24 hours and who provided it. The
+average duration of KMC should also be recorded. This information may be obtained through observation,
+3/14/26, 4:00 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=834&page=daily_clinical_monitori…
+2/4
+
+================================================================================
+PAGE 23
+================================================================================
+
+medical staﬀ notes, or direct inquiry with the caregiver.
+यह अनुभाग पिछले 24 घंटों में नवजात को दी गई KMC की जानकारी दर्ज करता है और यह भी कि इसे किसने प्रदान किया। KMC की
+औसत अवधि भी दर्ज की जानी चाहिए। यह जानकारी निरीक्षण, अस्पताल स्टाफ की टिप्पणी या देखभालकर्ता से सीधे पूछकर प्राप्त की
+जा सकती है।
+11 - Has Kangaroo Mother Care (KMC) been provided to
+the newborn in last 24 hours? [क्याा पिछले 24 घंटे में नवजात को
+कंगारू मदर केयर (KMC) दी गई है?]
+* must provide value
+नहीं (No)
+11.3 If No KMC, please specify the reason
+* must provide value
+ नवजात इनवेसिव वेंटिलेटर पर था, Newborn was
+on invasive ventilator
+ नवजात नॉन-इनवेसिव वेंटिलेशन पर था, Newborn
+was on non-invasive ventilation
+ चिकित्सक द्वाारा मना किया गया, Doctor did not
+allow
+ न्यूनतम हैंडलिंंग आवश्यक थी / स्थि
+ति गंभीर थी,
+Minimal handling required / Critically ill
+ मॉनिटरिंंग उपकरण जुड़ेे थे, Multiple
+probes/devices attached
+ इंट्राावेनस इन्फ्यूूजन चल रहा था, Receiving IV
+infusion
+ अन्य - कृपया स्पष्ट करें, Other - please specify
+Section G: Feeding Module
+12 - What was the newborn fed in the last 24 hours?
+(Tick all applicable options)
+[पिछले 24 घंटे में नवजात को क्याा-क्याा पिलाया/दिया गया? (सभी लागू
+विकल्प चुनें)] 
+* must provide value
+ मां का दूध, (Mother's breast milk)
+ निकाला हुआ मां का दूध (EBM), (Expressed
+breast milk)
+ डोनर दूध, (Donor breast milk)
+ फॉर्मूला दूध, (Formula milk)
+ इंट्राावीनस फ्लूूइड्स, (Intravenous ﬂuids)
+ टीपीएन, (Total Parenteral Nutrition)
+ ग्लूूकोज पानी, (Glucose water)
+ दवाइयां, (Medicines)
+ अन्य - कृपया स्पष्ट करें, (Other - please specify)
+12.2 - How was the feed provided to the newborn?
+[नवजात को खाना/दूध कैसे दिया गया? (सभी लागू तरीकों पर टिक
+करें)]
+(Tick all applicable methods used in the last 24 hours)
+* must provide value
+ सीधे स्तनपान, (Direct breastfeeding)
+ चम्मच / पलादे / कप / बोतल, (Spoon / Paladai /
+Cup / Bottle feeding)
+ नासोगैस्ट्
+रिक ट्यूूब से, (Nasogastric tube feeding)
+ ओरोगैस्ट्
+रिक ट्यूूब से, (Orogastric tube feeding)
+ इंट्राावीनस, (Intravenous)
+ सिरिंंज / ड्रॉॉपर से, (Syringe / Dropper)
+ अन्य तरीका - कृपया स्पष्ट करें, (Other method -
+please specify)
+Koyi Doodh Nahi Diya Jaa Raha Hai Aaj 
+Section H: Remarks and GPS
+16 - Remarks [यह फॉर्म भरते समय कुछ टिप्पणी हो तो वह अंकित
+कीजिए]
+Shishu Ki Condition Severe Thi Shishu Aaj 
+3/14/26, 4:00 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=834&page=daily_clinical_monitori…
+3/4
+
+================================================================================
+PAGE 24
+================================================================================
+
+17 - GPS Latitude [जीपीएस लोकेशन]
+26.4699904
+   
+  reset
+18 - GPS Longitude [जीपीएस लोकेशन]
+80.314368
+   
+  reset
+Form Status
+Complete?
+Complete
+Update
+Update
+-- Cancel --
+3/14/26, 4:00 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=834&page=daily_clinical_monitori…
+4/4
+
+================================================================================
+PAGE 25
+================================================================================
+
+ICMR Emollient - Main
+Record ID 307-9 Baby (ID: 12-0009-1) of Goldi
+Baseline General Information Module
+Record ID
+307-9
+Section A: General Information (Pre-ﬁlled)
+ 
+Baby's Name
+b/o Goldi
+Hospital Name
+GSVM Medical College
+Hospital Reg No
+20250514243
+Mother's Name
+Goldi
+Fathers Name
+Sumit
+Enrollment Date
+25-09-2025 08:40
+Enrolled Baby's UID
+12-0009-1
+ 
+ 
+5 - Baseline Date in (DD/MM/YYYY HH:SS)
+* must provide value
+25-09-2025 09:19
+Time is in 24 hors format. So 2:02 PM would be 14:02. By
+entering 2:02 you refer to 2:02 AM i.e the early morning time
+Section B: Baby's Information At Birth. Fill the following information from hospital records [यह सारी जानकारी
+अस्पताल के रेजिस्ट्रैैशन फॉर्म मे से देख कर भरे]
+6 - Please mention all the Sources available for
+calculating the gestational age of the newborn
+[क्याा नवजात की गर्भकाल आयु (Gestational age) प्रवेश फॉर्म में
+उपलब्ध है?
+क्याा यह जानकारी LMP (अंतिम मासिक धर्म) या अल्ट्राासाउंड के
+आधार पर है?
+(अगर नहीं, तो कृपया डॉक्टर से पुष्टि करें और फिर गर्भकाल दर्ज
+करें।)]
+* must provide value
+ LMP
+ ULTRASOUND
+ BALLARD SCORE
+ NONE
+Confirm form the hospital record
+GA as Informed by Mother/Family
+9 - Please state the gestational age of the newborn in
+completed weeks. [नवजात का पूरा हुआ गर्भकाल सप्ताह में दर्ज
+33
+1 - Start Time/ Time Stamp of form ﬁlling
+[फॉर्म भरने का शुरूआती समय]
+* must provide value
+25-09-2025 09:19
+2 - Hospital Name and Code [अस्पताल का नाम]
+GSVM Medical College
+3 - Study arm assigned [अध्ययन का आवंटित समूह]
+Intervention
+4 - Data collector name [डेटा कलेक्टर का नाम (सूची से चुनें)]
+* must provide value
+4/17/26, 3:42 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=830&page=baseline_information…
+1/3
+
+================================================================================
+PAGE 26
+================================================================================
+
+करें।]
+* must provide value
+9.1 - Please state the gestational age of the newborn in
+completed days. [नवजात का पूरा हुआ गर्भकाल दिन में दर्ज करें।]
+* must provide value
+00
+Final GA Based on other option
+Final Gestational Age - Weeks
+33
+  
+Final Gestational Age - Days
+0
+  
+Feeding and Crying Information
+10 - Did the Newborn cried immediately after birth? [क्याा
+नवजात ने जन्म के तुरंत बाद रोना शुरू किया था?]
+* must provide value
+हाँ (Yes)
+11 - Was the newborn breastfed after birth? [क्याा नवजात
+को जन्म के बाद स्तनपान कराया गया था?]
+* must provide value
+नहीं (No)
+11.1 - Reason for no breastfeeding
+* must provide value
+The child was immediately admitted to the 
+Section C: General Examination Details
+What is the temperature of the Newborn at the time of admission?
+ [भर्ती के समय नवजात का तापमान कितना था?]
+Unit
+ 
+Reading
+ 
+ °C
+°F
+37
+What is the pulse rate of the newborn at the time of admission? [भर्ती के
+समय नवजात की नाड़ीी दर (Pulse Rate) क्याा थी?]
+130
+What is the respiratory rate (RR) of the newborn at the time of admission?
+[भर्ती के समय नवजात की श्वसन दर (Respiratory Rate) क्याा थी?]
+62
+What is the oxygen saturation % (SpO2) level of the newborn? [भर्ती के समय
+नवजात का ऑक्सीीजन सेचुरेशन % (SpO2) स्तर कितना था?] 
+96
+ 
+Section E: Baseline Skin Condition of the Newborn (नवजात शिशु की त्वचा की जांच करे, हर एक भाग को जाँचने के बाद
+निम्नलिखित प्रश्न का उत्तर दर्जित करे)
+19 - Please select the condition of the newborn skin
+from the given options.
+[कृपया नीचे दिए गए विकल्पों में से नवजात की त्वचा की स्थि
+ति चुनें।]
+* must provide value
+सामान्य, त्वचा में कोई सूखापन या पपड़ीी नहीं (Normal, no
+Skin Condition Score
+* must provide value
+0
+  
+20 - Remarks
+[यह फॉर्म भरते समय कुछ टिप्पणी हो तो वह अंकित कीजिए]
+Some Information are not ﬁlled baby ﬁle
+4/17/26, 3:42 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=830&page=baseline_information…
+2/3
+
+================================================================================
+PAGE 27
+================================================================================
+
+21 - GPS Latitude [जीपीएस लोकेशन]
+26.47867933321999   
+  reset
+22 - GPS Longittude [जीपीएस लोकेशन]
+80.30828906800409   
+  reset
+Form Status
+Complete?
+Complete
+Update
+Update
+-- Cancel --
+4/17/26, 3:42 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=830&page=baseline_information…
+3/3
+
+================================================================================
+PAGE 28
+================================================================================
+
+ICMR Emollient - Main
+Record ID 307-9 Baby (ID: 12-0009-1) of Goldi
+Neonatal Sepsis Screening
+Record ID
+307-9
+This form is to be completed daily for all neonates enrolled in the ICMR Emollient Study to screen for signs of
+sepsis or clinical deterioration. It draws information from physician assessments and bedside observations.
+The form should be ﬁlled once every 24 hours using direct clinical evaluation, vital signs, feeding records, and
+laboratory results. All ﬁelds must be completed; select 'Not Observed' if a parameter was not assessed.
+यह फॉर्म ICMR इमोलिएंट अध्ययन में नामांकित सभी नवजात शिशुओं के लिए प्रतिदिन भरना अनिवार्य है, ताकि सेप्सि
+स या स्वाास्थ्य
+गिरावट के लक्षणों की पहचान की जा सके। इसमें चिकित्सक के मूल्यांांकन और बिस्तर के पास की गई देखभाल से जानकारी ली जाती है।
+फॉर्म हर 24 घंटे में एक बार भरना है, जिसमें प्रत्यक्ष जांच, जीवन संकेत, फीडिंंग रिकॉर्ड और लैब रिपोर्ट शामिल हों। सभी प्रश्न भरना
+अनिवार्य है; यदि कोई पैरामीटर नहीं देखा गया हो, तो 'Not Observed' विकल्प चुनें।
+Section A: General Information (Pre-ﬁlled from the form)
+ 
+Baby Details:-
+Baby's Name
+b/o Goldi
+Hospital Name
+GSVM Medical College
+Hospital Reg No
+20250514243
+Mother's Name
+Goldi
+Fathers Name
+Sumit
+Enrollment Date
+25-09-2025 08:40
+Enrolled Baby's UID
+12-0009-1
+ 
+5 - Date of Neonatal Sepsis Screening [नवजात सेप्सि
+स
+स्क्रीीनिंंग की तिथि (DD/MM/YYYY HH:MM)]:
+* must provide value
+26-09-2025 14:48
+Time is in 24 hors format. So 2:02 PM would be 14:02. By
+entering 2:02 you refer to 2:02 AM i.e the early morning time
+Section B: Clinical Assessment
+This section documents key clinical signs in the newborn that may indicate sepsis or clinical deterioration.
+This section should be completed using a combination of data from the physician's checklist, direct bedside
+observation, and interviews with medical staﬀ. Ensure calm and safe handling of the newborn throughout
+the assessment process.
+1 - Start Time/ Time Stamp of form ﬁlling: [फॉर्म भरने का
+शुरूआती समय]
+* must provide value
+26-09-2025 14:47
+3 - Hospital Code: [अस्पताल कोड]
+GSVM Medical College
+4 - Data collector name [डेटा कलेक्टर का नाम (सूची से चुनें)]:
+* must provide value
+Susheel Pal
+4/17/26, 3:42 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=831&page=neonatal_sepsis_scre…
+1/8
+
+================================================================================
+PAGE 29
+================================================================================
+
+नैदानिक मूल्यांांकन नवजात शिशु में सेप्सि
+स या स्वाास्थ्य गिरावट के संकेतों को दर्ज करता है। यह अनुभाग चिकित्सक की चेकलिस्ट,
+प्रत्यक्ष निरीक्षण, और चिकित्सा स्टाफ के साक्षात्काार से प्राप्त जानकारी के आधार पर भरा जाना चाहिए। मूल्यांांकन के दौरान शिशु को
+शांतिपूर्वक और सुरक्षि
+त तरीके से संभालना आवश्यक है।
+6 - Select the unit of temperature. [तापमान की इकाई चुनें।]
+* must provide value
+ °C
+ °F
+6.1 - Measure the newborn's temperature. [नवजात का
+तापमान मापें।]
+* must provide value
+37.2
+6.2 - Is the newborn kept on a radiant warmer? [क्याा
+नवजात को रेडिएंट वार्मर पर रखा गया है?]
+* must provide value
+हाँ (Yes)
+6.3 - Does the newborn have a high temperature
+(≥38°C)?
+(Yes, if Q4 ≥38℃)
+[क्याा नवजात को तेज बुखार है (≥38℃/≥104 F )?]
+No
+  
+6.4 - Does the infant have a low body temperature (<
+35.5℃)?
+(Yes, if Q4 < 35.5℃)
+[क्याा नवजात का शरीर का तापमान कम है (< 35.5℃/(< 95.9 F)?]
+No
+  
+7 - What is the newborn's oxygen saturation (SpO₂) in
+percent? [नवजात की ऑक्सीीजन सेचुरेशन (SpO₂) कितनी है?]
+* must provide value
+99
+8 - What is the pulse rate of the newborn? [नवजात की
+नाड़ीी दर (pulse rate) कितनी है?]
+* must provide value
+174
+8.1 - Is the newborn having tachycardia? (Yes, if Q8 ≥180
+bpm) 
+[क्याा नवजात की धड़कन तेज (tachycardia) है? (अगर bpm
+≥180)]
+No
+  
+8.2 - Is the newborn having bradycardia? (Yes, if Q8 < 80
+bpm)
+[क्याा नवजात की धड़कन धीमी (bradycardia) है? (अगर bpm <
+80)]
+No
+  
+9 - Count the breaths in one minute. (Ensure the baby is
+calm when you are measuring.) [एक मिनट में श्वासों (सांस) की
+गिनती करें। (सुनिश्चित करें कि मापते समय शिशु शांत हो।]
+* must provide value
+88
+10 - Does the baby has fast breathing?
+Yes
+  
+11 - Are you able to take chest video of the newborn
+* must provide value
+हाँ (Yes)
+4/17/26, 3:42 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=831&page=neonatal_sepsis_scre…
+2/8
+
+================================================================================
+PAGE 30
+================================================================================
+
+11.2 - Take a video of the baby's chest and abdomen
+spanning across 10 complete breaths.
+[शिशु की छाती और पेट का एक वीडियो लें जिसमें 10 पूर्ण श्वास
+शामिल हों।]
+Limit your video to 30 MB
+12 - Is the newborn kept on a non-invasive ventilator?
+[क्याा नवजात नॉन-इनवेसिव वेंटिलेटर पर है?]
+* must provide value
+नहीं (No)
+VID_20250926_145915.mp4 (12.54 MB)
+4/17/26, 3:42 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=831&page=neonatal_sepsis_scre…
+3/8
+
+================================================================================
+PAGE 31
+================================================================================
+
+12.2 - Is the newborn kept on a invasive mechanical
+ventilator? [क्याा नवजात को इनवेसिव मेकैनिकल वेंटिलेटर पर
+रखा गया है?]
+* must provide value
+नहीं (No)
+13 - Is the newborn breathing rapidly? (Yes, if Q2 ≥60
+breath per minute)
+[क्याा नवजात तेज सांस ले रहा है? (अगर ≥60 प्रति मिनट)]
+* must provide value
+Yes
+  
+13.1 - Is the newborn experiencing bradypnea? (Yes, if
+Q2 < 30 breath per minute)
+[क्याा नवजात की सांसें धीमी हैं? (अगर < 30 प्रति मिनट)]
+(Autogenerated)
+No
+  
+15 - What is the type of cry observed in the newborn?
+[नवजात का रोना किस प्रकार का है?]
+* must provide value
+सामान्य रोना, Normal cry
+16 - What is the muscle tone of the newborn?
+[नवजात की मांसपेशियों की टोन कैसी है?]
+सामान्य / सक्रि
+य, Active
+17 - Has the newborn shown any of the following
+neurological signs?
+[क्याा नवजात में नीचे दिए गए किसी भी तंत्रिका (न्यूरोलॉजिकल) लक्षण
+को देखा गया है?]
+(Multi-select - mark all that apply)
+ दौरे (फिट्स), Convulsions (seizures)
+ असामान्य हरकतें, Abnormal movements
+ का अकड़ााव / आर्चिंग, Body Arching / Rigidity
+ इनमें से कोई नहीं, None of the above
+18 - What is the newborn's skin colour? [नवजात की त्वचा
+का रंग क्याा है?]
+* must provide value
+गुलाबी, Pink
+19 - What did the skin perfusion and hydration
+assessments reveal?
+[त्वचा से जुड़ीी परफ्यूूजन और हाइड्रेेशन की जांच में क्याा पाया गया?]
+(Select all that apply)
+* must provide value
+ कैपिलरी रीफिल समय > 3 सेकंड था, Capillary reﬁll
+time (CRT) > 3 seconds
+ त्वचा सामान्य स्थि
+ति में लौटने में >2 सेकंड ले रही थी,
+Skin pinch return time (Turgor) > 2 seconds
+ इनमें से कोई नहीं, None of the above
+20, Is there any bleeding observed in the newborn? [क्याा
+नवजात में कहीं से रक्तस्रााव (ब्लीडिंंग) हो रहा है?]
+* must provide value
+नहीं, No
+21 - Is the anterior fontanelle of the newborn bulging?
+[क्याा नवजात के सिर का अगला मुलायम हिस्साा (एंटीरियर फॉन्टेेनेल)
+फूला हुआ है?]
+* must provide value
+नहीं (No)
+22 - Has the newborn shown any of the following
+abdominal or gastrointestinal signs?
+[क्याा नवजात के पेट या पाचन से संबंधित कोई लक्षण देखे गए हैं?]
+(Multi-select - mark all that apply)
+* must provide value
+ दूध उल्टीी करना या मुँह से बाहर निकालना
+(रिगर्जिटेशन), Regurgitation/vomiting
+ IFT के माध्यम से फीडिंंग में अवशेष देखा गया,
+Residuals seen via IFT
+ पेट फूला हुआ है, Abdominal distension
+ अन्य - कृपया स्पष्ट करें, Other - please specify
+4/17/26, 3:42 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=831&page=neonatal_sepsis_scre…
+4/8
+
+================================================================================
+PAGE 32
+================================================================================
+
+इनमें से कोई नहीं, None of the above
+23 - Does the newborn have any of the following skin or
+umbilical signs?
+[क्याा नवजात की त्वचा या नाभि में नीचे दिए गए कोई लक्षण दिखाई दे
+रहे हैं?]
+(Multi-select - mark all that apply)
+* must provide value
+ त्वचा पर फोड़ेे/दाने - 10 से कम, Pustules/rash - <
+10
+ त्वचा पर फोड़ेे/दाने - 10 या अधिक, Pustules/rash -
+≥10
+ फोड़ाा / पस वाला घाव, Abscess present
+ नाभि लाल दिख रही है, Umbilicus is red
+ नाभि से मवाद निकल रहा है, Umbilicus is
+discharging pus
+ नवजात को पीलिया है, Jaundice present
+ इनमें से कोई नहीं, None of the above
+24 - What is the general condition of the newborn?
+[नवजात की सामान्य अवस्थाा कैसी है?]
+* must provide value
+सतर्क है, Alert
+25 - What is the clinician's impression regarding sepsis?
+[चिकित्सक की राय में नवजात में सेप्सि
+स के क्याा संकेत हैं?]
+* must provide value
+सेप्सि
+स के कोई संकेत नहीं, No signs of sepsis
+25.1 - Has the doctor prescribed any blood test for the
+newborn in the past 24 hours? [क्याा डॉक्टर ने नवजात के लिए
+कोई ब्लड टेस्ट लिखवाया है (पिछले 24 घंटे में)?]
+* must provide value
+हाँ (Yes)
+25.2 - Are the reports of the prescribed blood test(s)
+available? [क्याा इन ब्लड टेस्ट्स की रिपोर्ट प्राप्त हो गई है?]
+* must provide value
+हाँ (Yes)
+Section C: Sepsis Screening/ Blood Tests
+This section captures all diagnostic tests conducted or planned in the past 24 hours to support sepsis
+evaluation in the newborn. Information should be entered based on hospital records, lab reports, and
+physician orders. Ensure that the test results are recorded accurately, and upload relevant reports wherever
+applicable.
+यह अनुभाग पिछले 24 घंटों में नवजात की सेप्सि
+स जांच के लिए की गई या योजनाबद्ध सभी नैदानिक जांचों को दर्ज करता है। जानकारी
+अस्पताल की फाइल, लैब रिपोर्ट और चिकित्सक के निर्देशों के आधार पर भरी जानी चाहिए। कृपया रिपोर्ट में दिए गए परिणामों को सही-
+सही दर्ज करें और जहाँ आवश्यक हो वहाँ पीडीएफ रिपोर्ट अपलोड करें।
+26 - What tests were planned/conducted? (Select all that
+applies) [नवजात के लिए कौन-कौन से टेस्ट प्लाान या किए गए हैं?
+(सभी लागू विकल्प चुनें)]
+* must provide value
+ ब्लड ग्लूूकोज टेस्ट (Blood Glucose Test)
+ कंप्लीीट ब्लड काउंट (CBC) (Complete Blood
+Count)
+ बिलिरुबिन टेस्ट (Bilirubin Test)
+ सी-रिएक्टि
+व प्रोटीन (CRP) (C-Reactive Protein)
+ इलेक्ट्रोोलाइट पैनल (Electrolyte Panel)
+ कोएगुलेशन प्रोफाइल (Coagulation Proﬁle)
+ थायरॉयड फंक्शन टेस्ट (Thyroid Function Test)
+ हियरिंंग स्क्रीीनिंंग (Hearing Screening)
+ चेस्ट एक्स-रे (Chest X-ray)
+ यूरिन एनालिसिस (Urine Analysis)
+ ब्लड कल्चर (Blood Culture)
+4/17/26, 3:42 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=831&page=neonatal_sepsis_scre…
+5/8
+
+================================================================================
+PAGE 33
+================================================================================
+
+अन्य - कृपया स्पष्ट करें (If Others Please specify)
+Blood Test Result Details and Values
+Blood sugar level (mg/dL) in Blood Glucose test report?[
+[ब्लड ग्लूूकोज टेस्ट किया गया है, तो रिपोर्ट में ब्लड शुगर का (mg/dL)?]
+TLC Count (mm³)
+15500
+Hemoglobin (g/dL)
+20.6
+Platelet Count (lakhs/mm³)
+257000
+Absolute Neutrophils Count (mm³)
+9.9
+Total Bilirubin (mg/dL)
+3.2
+CRP  (mg/dL)
+047
+ 
+31 - Did the facility planned/conducted a pro-calcitonin
+test for the newborn? [क्याा नवजात के लिए प्रो-कल्सीीटोनिन टेस्ट
+किया गया है या करने का निर्देश है?]
+* must provide value
+नहीं (No)
+32, Please upload the PDF of laboratory tests done for
+the newborn in the past 24 hours. (PDF)
+[पिछले 24 घंटे में हुए लैब टेस्ट्स की PDF अपलोड करें।]
+* must provide value
+Adobe Scan 26 Sept 2025.pdf (0.15 MB)
+4/17/26, 3:42 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=831&page=neonatal_sepsis_scre…
+6/8
+
+================================================================================
+PAGE 34
+================================================================================
+
+
+
+
+
+Section D: Adverse Skin Events and Serious Adverse Events Screening (त्वचा से संबंधित प्रतिकूल घटनाएं और गंभीर
+प्रतिकूल घटना की जांच)
+This section assesses whether the newborn has experienced any adverse skin reactions or serious adverse
+events, including phototherapy-related eﬀects and non-infectious hyperthermia. Information should be
+gathered through direct observation, caregiver reports, clinical records, or staﬀ interviews. (Past 24 hours)
+इस अनुभाग में यह मूल्यांांकन किया जाता है कि क्याा नवजात को कोई प्रतिकूल त्वचा प्रतिक्रि
+या या गंभीर प्रतिकूल घटना हुई है, जैसे
+4/17/26, 3:42 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=831&page=neonatal_sepsis_scre…
+7/8
+
+================================================================================
+PAGE 35
+================================================================================
+
+फोटोथेरेपी से जुड़ीी त्वचा की समस्यााएं या संक्रमण से असंबंधित तेज बुखार (हाइपरथर्मिया)। जानकारी सीधे निरीक्षण, देखभालकर्ता की
+रिपोर्ट, क्लि
+निकल रिकॉर्ड या स्टाफ इंटरव्यूू के माध्यम से एकत्र की जा सकती है। (Past 24 hours)
+ 
+34 - Has the newborn shown any severe, generalised
+hypersensitivity reaction?
+(Such as widespread rash, swelling, redness, blistering,
+or diﬃculty in breathing)
+[क्याा नवजात को कोई गंभीर एलर्जी प्रतिक्रि
+या हुई है?
+(जैसे - पूरे शरीर में चकत्ते, सूजन, फफोले, सांस लेने में तकलीफ या
+त्वचा का लाल हो जाना)]
+* must provide value
+नहीं (No)
+35 - Is the newborn kept in a photo-therapy unit? [क्याा
+नवजात फोटोथेरेपी यूनिट में है?]
+* must provide value
+हाँ (Yes)
+35.1 - Has the newborn developed any phototherapy-
+related skin burn (Phototherapy burn)?
+(Skin darkening, blistering, or redness caused due to
+overexposure to phototherapy lights)
+[क्याा नवजात को फोटोथेरेपी के कारण कोई जलन या स्कि
+न बर्न हुआ
+है?
+(जैसे - त्वचा का गहरा होना, फफोले पड़ना, या अत्यधिक रोशनी के
+कारण लालिमा)]
+* must provide value
+नहीं (No)
+36 - Remarks
+[यह फॉर्म भरते समय कुछ टिप्पणी हो तो वह अंकित कीजिए]:
+37 - GPS Latitude
+[जीपीएस लोकेशन]:
+26.478482
+   
+  reset
+38 - GPS Longitude
+[जीपीएस लोकेशन]:
+80.3080426
+   
+  reset
+Form Status
+Complete?
+Complete
+Update
+Update
+-- Cancel --
+4/17/26, 3:42 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=831&page=neonatal_sepsis_scre…
+8/8
+
+================================================================================
+PAGE 36
+================================================================================
+
+ICMR Emollient - Main
+Record ID 307-9 Baby (ID: 12-0009-1) of Goldi
+Neonatal Sepsis Screening
+Record ID
+307-9
+This form is to be completed daily for all neonates enrolled in the ICMR Emollient Study to screen for signs of
+sepsis or clinical deterioration. It draws information from physician assessments and bedside observations.
+The form should be ﬁlled once every 24 hours using direct clinical evaluation, vital signs, feeding records, and
+laboratory results. All ﬁelds must be completed; select 'Not Observed' if a parameter was not assessed.
+यह फॉर्म ICMR इमोलिएंट अध्ययन में नामांकित सभी नवजात शिशुओं के लिए प्रतिदिन भरना अनिवार्य है, ताकि सेप्सि
+स या स्वाास्थ्य
+गिरावट के लक्षणों की पहचान की जा सके। इसमें चिकित्सक के मूल्यांांकन और बिस्तर के पास की गई देखभाल से जानकारी ली जाती है।
+फॉर्म हर 24 घंटे में एक बार भरना है, जिसमें प्रत्यक्ष जांच, जीवन संकेत, फीडिंंग रिकॉर्ड और लैब रिपोर्ट शामिल हों। सभी प्रश्न भरना
+अनिवार्य है; यदि कोई पैरामीटर नहीं देखा गया हो, तो 'Not Observed' विकल्प चुनें।
+Section A: General Information (Pre-ﬁlled from the form)
+ 
+Baby Details:-
+Baby's Name
+b/o Goldi
+Hospital Name
+GSVM Medical College
+Hospital Reg No
+20250514243
+Mother's Name
+Goldi
+Fathers Name
+Sumit
+Enrollment Date
+25-09-2025 08:40
+Enrolled Baby's UID
+12-0009-1
+ 
+5 - Date of Neonatal Sepsis Screening [नवजात सेप्सि
+स
+स्क्रीीनिंंग की तिथि (DD/MM/YYYY HH:MM)]:
+* must provide value
+27-09-2025 13:02
+Time is in 24 hors format. So 2:02 PM would be 14:02. By
+entering 2:02 you refer to 2:02 AM i.e the early morning time
+Section B: Clinical Assessment
+This section documents key clinical signs in the newborn that may indicate sepsis or clinical deterioration.
+This section should be completed using a combination of data from the physician's checklist, direct bedside
+observation, and interviews with medical staﬀ. Ensure calm and safe handling of the newborn throughout
+the assessment process.
+1 - Start Time/ Time Stamp of form ﬁlling: [फॉर्म भरने का
+शुरूआती समय]
+* must provide value
+27-09-2025 13:02
+3 - Hospital Code: [अस्पताल कोड]
+GSVM Medical College
+4 - Data collector name [डेटा कलेक्टर का नाम (सूची से चुनें)]:
+* must provide value
+Ambuj Saxena
+4/17/26, 3:42 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=832&page=neonatal_sepsis_scre…
+1/7
+
+================================================================================
+PAGE 37
+================================================================================
+
+नैदानिक मूल्यांांकन नवजात शिशु में सेप्सि
+स या स्वाास्थ्य गिरावट के संकेतों को दर्ज करता है। यह अनुभाग चिकित्सक की चेकलिस्ट,
+प्रत्यक्ष निरीक्षण, और चिकित्सा स्टाफ के साक्षात्काार से प्राप्त जानकारी के आधार पर भरा जाना चाहिए। मूल्यांांकन के दौरान शिशु को
+शांतिपूर्वक और सुरक्षि
+त तरीके से संभालना आवश्यक है।
+6 - Select the unit of temperature. [तापमान की इकाई चुनें।]
+* must provide value
+ °C
+ °F
+6.1 - Measure the newborn's temperature. [नवजात का
+तापमान मापें।]
+* must provide value
+36.6
+6.2 - Is the newborn kept on a radiant warmer? [क्याा
+नवजात को रेडिएंट वार्मर पर रखा गया है?]
+* must provide value
+हाँ (Yes)
+6.3 - Does the newborn have a high temperature
+(≥38°C)?
+(Yes, if Q4 ≥38℃)
+[क्याा नवजात को तेज बुखार है (≥38℃/≥104 F )?]
+No
+  
+6.4 - Does the infant have a low body temperature (<
+35.5℃)?
+(Yes, if Q4 < 35.5℃)
+[क्याा नवजात का शरीर का तापमान कम है (< 35.5℃/(< 95.9 F)?]
+No
+  
+7 - What is the newborn's oxygen saturation (SpO₂) in
+percent? [नवजात की ऑक्सीीजन सेचुरेशन (SpO₂) कितनी है?]
+* must provide value
+97
+8 - What is the pulse rate of the newborn? [नवजात की
+नाड़ीी दर (pulse rate) कितनी है?]
+* must provide value
+198
+8.1 - Is the newborn having tachycardia? (Yes, if Q8 ≥180
+bpm) 
+[क्याा नवजात की धड़कन तेज (tachycardia) है? (अगर bpm
+≥180)]
+Yes
+  
+8.2 - Is the newborn having bradycardia? (Yes, if Q8 < 80
+bpm)
+[क्याा नवजात की धड़कन धीमी (bradycardia) है? (अगर bpm <
+80)]
+No
+  
+9 - Count the breaths in one minute. (Ensure the baby is
+calm when you are measuring.) [एक मिनट में श्वासों (सांस) की
+गिनती करें। (सुनिश्चित करें कि मापते समय शिशु शांत हो।]
+* must provide value
+9999
+10 - Does the baby has fast breathing?
+Yes
+  
+11 - Are you able to take chest video of the newborn
+* must provide value
+नहीं (No)
+11.1 - Why you could not make a video, the reason for
+that
+Baby On Invasive Ventilation  And Minimal 
+4/17/26, 3:42 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=832&page=neonatal_sepsis_scre…
+2/7
+
+================================================================================
+PAGE 38
+================================================================================
+
+* must provide value
+12 - Is the newborn kept on a non-invasive ventilator?
+[क्याा नवजात नॉन-इनवेसिव वेंटिलेटर पर है?]
+* must provide value
+नहीं (No)
+12.2 - Is the newborn kept on a invasive mechanical
+ventilator? [क्याा नवजात को इनवेसिव मेकैनिकल वेंटिलेटर पर
+रखा गया है?]
+* must provide value
+हाँ (Yes)
+13 - Is the newborn breathing rapidly? (Yes, if Q2 ≥60
+breath per minute)
+[क्याा नवजात तेज सांस ले रहा है? (अगर ≥60 प्रति मिनट)]
+* must provide value
+Yes
+  
+13.1 - Is the newborn experiencing bradypnea? (Yes, if
+Q2 < 30 breath per minute)
+[क्याा नवजात की सांसें धीमी हैं? (अगर < 30 प्रति मिनट)]
+(Autogenerated)
+No
+  
+15 - What is the type of cry observed in the newborn?
+[नवजात का रोना किस प्रकार का है?]
+* must provide value
+नहीं रोना,(अनुपस्थि
+त), Absent cry
+16 - What is the muscle tone of the newborn?
+[नवजात की मांसपेशियों की टोन कैसी है?]
+सामान्य / सक्रि
+य, Active
+17 - Has the newborn shown any of the following
+neurological signs?
+[क्याा नवजात में नीचे दिए गए किसी भी तंत्रिका (न्यूरोलॉजिकल) लक्षण
+को देखा गया है?]
+(Multi-select - mark all that apply)
+ दौरे (फिट्स), Convulsions (seizures)
+ असामान्य हरकतें, Abnormal movements
+ का अकड़ााव / आर्चिंग, Body Arching / Rigidity
+ इनमें से कोई नहीं, None of the above
+18 - What is the newborn's skin colour? [नवजात की त्वचा
+का रंग क्याा है?]
+* must provide value
+गुलाबी, Pink
+19 - What did the skin perfusion and hydration
+assessments reveal?
+[त्वचा से जुड़ीी परफ्यूूजन और हाइड्रेेशन की जांच में क्याा पाया गया?]
+(Select all that apply)
+* must provide value
+ कैपिलरी रीफिल समय > 3 सेकंड था, Capillary reﬁll
+time (CRT) > 3 seconds
+ त्वचा सामान्य स्थि
+ति में लौटने में >2 सेकंड ले रही थी,
+Skin pinch return time (Turgor) > 2 seconds
+ इनमें से कोई नहीं, None of the above
+20, Is there any bleeding observed in the newborn? [क्याा
+नवजात में कहीं से रक्तस्रााव (ब्लीडिंंग) हो रहा है?]
+* must provide value
+नहीं, No
+21 - Is the anterior fontanelle of the newborn bulging?
+[क्याा नवजात के सिर का अगला मुलायम हिस्साा (एंटीरियर फॉन्टेेनेल)
+फूला हुआ है?]
+* must provide value
+नहीं (No)
+4/17/26, 3:42 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=832&page=neonatal_sepsis_scre…
+3/7
+
+================================================================================
+PAGE 39
+================================================================================
+
+22 - Has the newborn shown any of the following
+abdominal or gastrointestinal signs?
+[क्याा नवजात के पेट या पाचन से संबंधित कोई लक्षण देखे गए हैं?]
+(Multi-select - mark all that apply)
+* must provide value
+ दूध उल्टीी करना या मुँह से बाहर निकालना
+(रिगर्जिटेशन), Regurgitation/vomiting
+ IFT के माध्यम से फीडिंंग में अवशेष देखा गया,
+Residuals seen via IFT
+ पेट फूला हुआ है, Abdominal distension
+ अन्य - कृपया स्पष्ट करें, Other - please specify
+ इनमें से कोई नहीं, None of the above
+23 - Does the newborn have any of the following skin or
+umbilical signs?
+[क्याा नवजात की त्वचा या नाभि में नीचे दिए गए कोई लक्षण दिखाई दे
+रहे हैं?]
+(Multi-select - mark all that apply)
+* must provide value
+ त्वचा पर फोड़ेे/दाने - 10 से कम, Pustules/rash - <
+10
+ त्वचा पर फोड़ेे/दाने - 10 या अधिक, Pustules/rash -
+≥10
+ फोड़ाा / पस वाला घाव, Abscess present
+ नाभि लाल दिख रही है, Umbilicus is red
+ नाभि से मवाद निकल रहा है, Umbilicus is
+discharging pus
+ नवजात को पीलिया है, Jaundice present
+ इनमें से कोई नहीं, None of the above
+24 - What is the general condition of the newborn?
+[नवजात की सामान्य अवस्थाा कैसी है?]
+* must provide value
+सुस्त है, Lethargic
+25 - What is the clinician's impression regarding sepsis?
+[चिकित्सक की राय में नवजात में सेप्सि
+स के क्याा संकेत हैं?]
+* must provide value
+सेप्सि
+स के कोई संकेत नहीं, No signs of sepsis
+25.1 - Has the doctor prescribed any blood test for the
+newborn in the past 24 hours? [क्याा डॉक्टर ने नवजात के लिए
+कोई ब्लड टेस्ट लिखवाया है (पिछले 24 घंटे में)?]
+* must provide value
+हाँ (Yes)
+25.2 - Are the reports of the prescribed blood test(s)
+available? [क्याा इन ब्लड टेस्ट्स की रिपोर्ट प्राप्त हो गई है?]
+* must provide value
+हाँ (Yes)
+Section C: Sepsis Screening/ Blood Tests
+This section captures all diagnostic tests conducted or planned in the past 24 hours to support sepsis
+evaluation in the newborn. Information should be entered based on hospital records, lab reports, and
+physician orders. Ensure that the test results are recorded accurately, and upload relevant reports wherever
+applicable.
+यह अनुभाग पिछले 24 घंटों में नवजात की सेप्सि
+स जांच के लिए की गई या योजनाबद्ध सभी नैदानिक जांचों को दर्ज करता है। जानकारी
+अस्पताल की फाइल, लैब रिपोर्ट और चिकित्सक के निर्देशों के आधार पर भरी जानी चाहिए। कृपया रिपोर्ट में दिए गए परिणामों को सही-
+सही दर्ज करें और जहाँ आवश्यक हो वहाँ पीडीएफ रिपोर्ट अपलोड करें।
+26 - What tests were planned/conducted? (Select all that
+applies) [नवजात के लिए कौन-कौन से टेस्ट प्लाान या किए गए हैं?
+(सभी लागू विकल्प चुनें)]
+* must provide value
+ ब्लड ग्लूूकोज टेस्ट (Blood Glucose Test)
+ कंप्लीीट ब्लड काउंट (CBC) (Complete Blood
+Count)
+ बिलिरुबिन टेस्ट (Bilirubin Test)
+ सी-रिएक्टि
+व प्रोटीन (CRP) (C-Reactive Protein)
+ इलेक्ट्रोोलाइट पैनल (Electrolyte Panel)
+ कोएगुलेशन प्रोफाइल (Coagulation Proﬁle)
+4/17/26, 3:42 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=832&page=neonatal_sepsis_scre…
+4/7
+
+================================================================================
+PAGE 40
+================================================================================
+
+थायरॉयड फंक्शन टेस्ट (Thyroid Function Test)
+ हियरिंंग स्क्रीीनिंंग (Hearing Screening)
+ चेस्ट एक्स-रे (Chest X-ray)
+ यूरिन एनालिसिस (Urine Analysis)
+ ब्लड कल्चर (Blood Culture)
+ अन्य - कृपया स्पष्ट करें (If Others Please specify)
+Blood Test Result Details and Values
+Blood sugar level (mg/dL) in Blood Glucose test report?[
+[ब्लड ग्लूूकोज टेस्ट किया गया है, तो रिपोर्ट में ब्लड शुगर का (mg/dL)?]
+TLC Count (mm³)
+15500
+Hemoglobin (g/dL)
+20.6
+Platelet Count (lakhs/mm³)
+257
+Absolute Neutrophils Count (mm³)
+7.4
+Total Bilirubin (mg/dL)
+CRP  (mg/dL)
+ 
+31 - Did the facility planned/conducted a pro-calcitonin
+test for the newborn? [क्याा नवजात के लिए प्रो-कल्सीीटोनिन टेस्ट
+किया गया है या करने का निर्देश है?]
+* must provide value
+नहीं (No)
+32, Please upload the PDF of laboratory tests done for
+the newborn in the past 24 hours. (PDF)
+[पिछले 24 घंटे में हुए लैब टेस्ट्स की PDF अपलोड करें।]
+* must provide value
+Goldi Sumit CBC.pdf (0.34 MB)
+4/17/26, 3:42 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=832&page=neonatal_sepsis_scre…
+5/7
+
+================================================================================
+PAGE 41
+================================================================================
+
+
+
+
+
+Section D: Adverse Skin Events and Serious Adverse Events Screening (त्वचा से संबंधित प्रतिकूल घटनाएं और गंभीर
+प्रतिकूल घटना की जांच)
+This section assesses whether the newborn has experienced any adverse skin reactions or serious adverse
+events, including phototherapy-related eﬀects and non-infectious hyperthermia. Information should be
+gathered through direct observation, caregiver reports, clinical records, or staﬀ interviews. (Past 24 hours)
+इस अनुभाग में यह मूल्यांांकन किया जाता है कि क्याा नवजात को कोई प्रतिकूल त्वचा प्रतिक्रि
+या या गंभीर प्रतिकूल घटना हुई है, जैसे
+4/17/26, 3:42 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=832&page=neonatal_sepsis_scre…
+6/7
+
+================================================================================
+PAGE 42
+================================================================================
+
+फोटोथेरेपी से जुड़ीी त्वचा की समस्यााएं या संक्रमण से असंबंधित तेज बुखार (हाइपरथर्मिया)। जानकारी सीधे निरीक्षण, देखभालकर्ता की
+रिपोर्ट, क्लि
+निकल रिकॉर्ड या स्टाफ इंटरव्यूू के माध्यम से एकत्र की जा सकती है। (Past 24 hours)
+ 
+34 - Has the newborn shown any severe, generalised
+hypersensitivity reaction?
+(Such as widespread rash, swelling, redness, blistering,
+or diﬃculty in breathing)
+[क्याा नवजात को कोई गंभीर एलर्जी प्रतिक्रि
+या हुई है?
+(जैसे - पूरे शरीर में चकत्ते, सूजन, फफोले, सांस लेने में तकलीफ या
+त्वचा का लाल हो जाना)]
+* must provide value
+नहीं (No)
+35 - Is the newborn kept in a photo-therapy unit? [क्याा
+नवजात फोटोथेरेपी यूनिट में है?]
+* must provide value
+नहीं (No)
+36 - Remarks
+[यह फॉर्म भरते समय कुछ टिप्पणी हो तो वह अंकित कीजिए]:
+Platelet Count (lakhs/mm³) 2.57 Lac Cells/m
+37 - GPS Latitude
+[जीपीएस लोकेशन]:
+26.4699904
+   
+  reset
+38 - GPS Longitude
+[जीपीएस लोकेशन]:
+80.314368
+   
+  reset
+Form Status
+Complete?
+Complete
+Update
+Update
+-- Cancel --
+4/17/26, 3:42 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=832&page=neonatal_sepsis_scre…
+7/7
+
+================================================================================
+PAGE 43
+================================================================================
+
+ICMR Emollient - Main
+Record ID 307-9 Baby (ID: 12-0009-1) of Goldi
+Neonatal Sepsis Screening
+Record ID
+307-9
+This form is to be completed daily for all neonates enrolled in the ICMR Emollient Study to screen for signs of
+sepsis or clinical deterioration. It draws information from physician assessments and bedside observations.
+The form should be ﬁlled once every 24 hours using direct clinical evaluation, vital signs, feeding records, and
+laboratory results. All ﬁelds must be completed; select 'Not Observed' if a parameter was not assessed.
+यह फॉर्म ICMR इमोलिएंट अध्ययन में नामांकित सभी नवजात शिशुओं के लिए प्रतिदिन भरना अनिवार्य है, ताकि सेप्सि
+स या स्वाास्थ्य
+गिरावट के लक्षणों की पहचान की जा सके। इसमें चिकित्सक के मूल्यांांकन और बिस्तर के पास की गई देखभाल से जानकारी ली जाती है।
+फॉर्म हर 24 घंटे में एक बार भरना है, जिसमें प्रत्यक्ष जांच, जीवन संकेत, फीडिंंग रिकॉर्ड और लैब रिपोर्ट शामिल हों। सभी प्रश्न भरना
+अनिवार्य है; यदि कोई पैरामीटर नहीं देखा गया हो, तो 'Not Observed' विकल्प चुनें।
+Section A: General Information (Pre-ﬁlled from the form)
+ 
+Baby Details:-
+Baby's Name
+b/o Goldi
+Hospital Name
+GSVM Medical College
+Hospital Reg No
+20250514243
+Mother's Name
+Goldi
+Fathers Name
+Sumit
+Enrollment Date
+25-09-2025 08:40
+Enrolled Baby's UID
+12-0009-1
+ 
+5 - Date of Neonatal Sepsis Screening [नवजात सेप्सि
+स
+स्क्रीीनिंंग की तिथि (DD/MM/YYYY HH:MM)]:
+* must provide value
+28-09-2025 11:26
+Time is in 24 hors format. So 2:02 PM would be 14:02. By
+entering 2:02 you refer to 2:02 AM i.e the early morning time
+Section B: Clinical Assessment
+This section documents key clinical signs in the newborn that may indicate sepsis or clinical deterioration.
+This section should be completed using a combination of data from the physician's checklist, direct bedside
+observation, and interviews with medical staﬀ. Ensure calm and safe handling of the newborn throughout
+the assessment process.
+1 - Start Time/ Time Stamp of form ﬁlling: [फॉर्म भरने का
+शुरूआती समय]
+* must provide value
+28-09-2025 11:26
+3 - Hospital Code: [अस्पताल कोड]
+GSVM Medical College
+4 - Data collector name [डेटा कलेक्टर का नाम (सूची से चुनें)]:
+* must provide value
+Ambuj Saxena
+4/17/26, 3:43 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=833&page=neonatal_sepsis_scre…
+1/5
+
+================================================================================
+PAGE 44
+================================================================================
+
+नैदानिक मूल्यांांकन नवजात शिशु में सेप्सि
+स या स्वाास्थ्य गिरावट के संकेतों को दर्ज करता है। यह अनुभाग चिकित्सक की चेकलिस्ट,
+प्रत्यक्ष निरीक्षण, और चिकित्सा स्टाफ के साक्षात्काार से प्राप्त जानकारी के आधार पर भरा जाना चाहिए। मूल्यांांकन के दौरान शिशु को
+शांतिपूर्वक और सुरक्षि
+त तरीके से संभालना आवश्यक है।
+6 - Select the unit of temperature. [तापमान की इकाई चुनें।]
+* must provide value
+ °C
+ °F
+6.1 - Measure the newborn's temperature. [नवजात का
+तापमान मापें।]
+* must provide value
+36.8
+6.2 - Is the newborn kept on a radiant warmer? [क्याा
+नवजात को रेडिएंट वार्मर पर रखा गया है?]
+* must provide value
+हाँ (Yes)
+6.3 - Does the newborn have a high temperature
+(≥38°C)?
+(Yes, if Q4 ≥38℃)
+[क्याा नवजात को तेज बुखार है (≥38℃/≥104 F )?]
+No
+  
+6.4 - Does the infant have a low body temperature (<
+35.5℃)?
+(Yes, if Q4 < 35.5℃)
+[क्याा नवजात का शरीर का तापमान कम है (< 35.5℃/(< 95.9 F)?]
+No
+  
+7 - What is the newborn's oxygen saturation (SpO₂) in
+percent? [नवजात की ऑक्सीीजन सेचुरेशन (SpO₂) कितनी है?]
+* must provide value
+97
+8 - What is the pulse rate of the newborn? [नवजात की
+नाड़ीी दर (pulse rate) कितनी है?]
+* must provide value
+158
+8.1 - Is the newborn having tachycardia? (Yes, if Q8 ≥180
+bpm) 
+[क्याा नवजात की धड़कन तेज (tachycardia) है? (अगर bpm
+≥180)]
+No
+  
+8.2 - Is the newborn having bradycardia? (Yes, if Q8 < 80
+bpm)
+[क्याा नवजात की धड़कन धीमी (bradycardia) है? (अगर bpm <
+80)]
+No
+  
+9 - Count the breaths in one minute. (Ensure the baby is
+calm when you are measuring.) [एक मिनट में श्वासों (सांस) की
+गिनती करें। (सुनिश्चित करें कि मापते समय शिशु शांत हो।]
+* must provide value
+42
+10 - Does the baby has fast breathing?
+No
+  
+11 - Are you able to take chest video of the newborn
+* must provide value
+नहीं (No)
+11.1 - Why you could not make a video, the reason for
+that
+Baby On Invasive Ventilation  And Minimal 
+4/17/26, 3:43 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=833&page=neonatal_sepsis_scre…
+2/5
+
+================================================================================
+PAGE 45
+================================================================================
+
+* must provide value
+12 - Is the newborn kept on a non-invasive ventilator?
+[क्याा नवजात नॉन-इनवेसिव वेंटिलेटर पर है?]
+* must provide value
+नहीं (No)
+12.2 - Is the newborn kept on a invasive mechanical
+ventilator? [क्याा नवजात को इनवेसिव मेकैनिकल वेंटिलेटर पर
+रखा गया है?]
+* must provide value
+हाँ (Yes)
+13 - Is the newborn breathing rapidly? (Yes, if Q2 ≥60
+breath per minute)
+[क्याा नवजात तेज सांस ले रहा है? (अगर ≥60 प्रति मिनट)]
+* must provide value
+No
+  
+13.1 - Is the newborn experiencing bradypnea? (Yes, if
+Q2 < 30 breath per minute)
+[क्याा नवजात की सांसें धीमी हैं? (अगर < 30 प्रति मिनट)]
+(Autogenerated)
+No
+  
+15 - What is the type of cry observed in the newborn?
+[नवजात का रोना किस प्रकार का है?]
+* must provide value
+नहीं रोना,(अनुपस्थि
+त), Absent cry
+16 - What is the muscle tone of the newborn?
+[नवजात की मांसपेशियों की टोन कैसी है?]
+सामान्य / सक्रि
+य, Active
+17 - Has the newborn shown any of the following
+neurological signs?
+[क्याा नवजात में नीचे दिए गए किसी भी तंत्रिका (न्यूरोलॉजिकल) लक्षण
+को देखा गया है?]
+(Multi-select - mark all that apply)
+ दौरे (फिट्स), Convulsions (seizures)
+ असामान्य हरकतें, Abnormal movements
+ का अकड़ााव / आर्चिंग, Body Arching / Rigidity
+ इनमें से कोई नहीं, None of the above
+18 - What is the newborn's skin colour? [नवजात की त्वचा
+का रंग क्याा है?]
+* must provide value
+गुलाबी, Pink
+19 - What did the skin perfusion and hydration
+assessments reveal?
+[त्वचा से जुड़ीी परफ्यूूजन और हाइड्रेेशन की जांच में क्याा पाया गया?]
+(Select all that apply)
+* must provide value
+ कैपिलरी रीफिल समय > 3 सेकंड था, Capillary reﬁll
+time (CRT) > 3 seconds
+ त्वचा सामान्य स्थि
+ति में लौटने में >2 सेकंड ले रही थी,
+Skin pinch return time (Turgor) > 2 seconds
+ इनमें से कोई नहीं, None of the above
+20, Is there any bleeding observed in the newborn? [क्याा
+नवजात में कहीं से रक्तस्रााव (ब्लीडिंंग) हो रहा है?]
+* must provide value
+नहीं, No
+21 - Is the anterior fontanelle of the newborn bulging?
+[क्याा नवजात के सिर का अगला मुलायम हिस्साा (एंटीरियर फॉन्टेेनेल)
+फूला हुआ है?]
+* must provide value
+नहीं (No)
+4/17/26, 3:43 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=833&page=neonatal_sepsis_scre…
+3/5
+
+================================================================================
+PAGE 46
+================================================================================
+
+22 - Has the newborn shown any of the following
+abdominal or gastrointestinal signs?
+[क्याा नवजात के पेट या पाचन से संबंधित कोई लक्षण देखे गए हैं?]
+(Multi-select - mark all that apply)
+* must provide value
+ दूध उल्टीी करना या मुँह से बाहर निकालना
+(रिगर्जिटेशन), Regurgitation/vomiting
+ IFT के माध्यम से फीडिंंग में अवशेष देखा गया,
+Residuals seen via IFT
+ पेट फूला हुआ है, Abdominal distension
+ अन्य - कृपया स्पष्ट करें, Other - please specify
+ इनमें से कोई नहीं, None of the above
+23 - Does the newborn have any of the following skin or
+umbilical signs?
+[क्याा नवजात की त्वचा या नाभि में नीचे दिए गए कोई लक्षण दिखाई दे
+रहे हैं?]
+(Multi-select - mark all that apply)
+* must provide value
+ त्वचा पर फोड़ेे/दाने - 10 से कम, Pustules/rash - <
+10
+ त्वचा पर फोड़ेे/दाने - 10 या अधिक, Pustules/rash -
+≥10
+ फोड़ाा / पस वाला घाव, Abscess present
+ नाभि लाल दिख रही है, Umbilicus is red
+ नाभि से मवाद निकल रहा है, Umbilicus is
+discharging pus
+ नवजात को पीलिया है, Jaundice present
+ इनमें से कोई नहीं, None of the above
+24 - What is the general condition of the newborn?
+[नवजात की सामान्य अवस्थाा कैसी है?]
+* must provide value
+सुस्त है, Lethargic
+25 - What is the clinician's impression regarding sepsis?
+[चिकित्सक की राय में नवजात में सेप्सि
+स के क्याा संकेत हैं?]
+* must provide value
+संभावित सेप्सि
+स, Probable sepsis
+25.1 - Has the doctor prescribed any blood test for the
+newborn in the past 24 hours? [क्याा डॉक्टर ने नवजात के लिए
+कोई ब्लड टेस्ट लिखवाया है (पिछले 24 घंटे में)?]
+* must provide value
+नहीं (No)
+Section C: Sepsis Screening/ Blood Tests
+This section captures all diagnostic tests conducted or planned in the past 24 hours to support sepsis
+evaluation in the newborn. Information should be entered based on hospital records, lab reports, and
+physician orders. Ensure that the test results are recorded accurately, and upload relevant reports wherever
+applicable.
+यह अनुभाग पिछले 24 घंटों में नवजात की सेप्सि
+स जांच के लिए की गई या योजनाबद्ध सभी नैदानिक जांचों को दर्ज करता है। जानकारी
+अस्पताल की फाइल, लैब रिपोर्ट और चिकित्सक के निर्देशों के आधार पर भरी जानी चाहिए। कृपया रिपोर्ट में दिए गए परिणामों को सही-
+सही दर्ज करें और जहाँ आवश्यक हो वहाँ पीडीएफ रिपोर्ट अपलोड करें।
+31 - Did the facility planned/conducted a pro-calcitonin
+test for the newborn? [क्याा नवजात के लिए प्रो-कल्सीीटोनिन टेस्ट
+किया गया है या करने का निर्देश है?]
+* must provide value
+नहीं (No)
+Section D: Adverse Skin Events and Serious Adverse Events Screening (त्वचा से संबंधित प्रतिकूल घटनाएं और गंभीर
+प्रतिकूल घटना की जांच)
+This section assesses whether the newborn has experienced any adverse skin reactions or serious adverse
+events, including phototherapy-related eﬀects and non-infectious hyperthermia. Information should be
+gathered through direct observation, caregiver reports, clinical records, or staﬀ interviews. (Past 24 hours)
+4/17/26, 3:43 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=833&page=neonatal_sepsis_scre…
+4/5
+
+================================================================================
+PAGE 47
+================================================================================
+
+इस अनुभाग में यह मूल्यांांकन किया जाता है कि क्याा नवजात को कोई प्रतिकूल त्वचा प्रतिक्रि
+या या गंभीर प्रतिकूल घटना हुई है, जैसे
+फोटोथेरेपी से जुड़ीी त्वचा की समस्यााएं या संक्रमण से असंबंधित तेज बुखार (हाइपरथर्मिया)। जानकारी सीधे निरीक्षण, देखभालकर्ता की
+रिपोर्ट, क्लि
+निकल रिकॉर्ड या स्टाफ इंटरव्यूू के माध्यम से एकत्र की जा सकती है। (Past 24 hours)
+ 
+34 - Has the newborn shown any severe, generalised
+hypersensitivity reaction?
+(Such as widespread rash, swelling, redness, blistering,
+or diﬃculty in breathing)
+[क्याा नवजात को कोई गंभीर एलर्जी प्रतिक्रि
+या हुई है?
+(जैसे - पूरे शरीर में चकत्ते, सूजन, फफोले, सांस लेने में तकलीफ या
+त्वचा का लाल हो जाना)]
+* must provide value
+नहीं (No)
+35 - Is the newborn kept in a photo-therapy unit? [क्याा
+नवजात फोटोथेरेपी यूनिट में है?]
+* must provide value
+नहीं (No)
+36 - Remarks
+[यह फॉर्म भरते समय कुछ टिप्पणी हो तो वह अंकित कीजिए]:
+Jr -2 Prachi Ma'am Ne Bataya Hai Shayad Sh
+37 - GPS Latitude
+[जीपीएस लोकेशन]:
+26.4870674
+   
+  reset
+38 - GPS Longitude
+[जीपीएस लोकेशन]:
+80.3491599
+   
+  reset
+Form Status
+Complete?
+Complete
+Update
+Update
+-- Cancel --
+4/17/26, 3:43 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=833&page=neonatal_sepsis_scre…
+5/5
+
+================================================================================
+PAGE 48
+================================================================================
+
+ICMR Emollient - Main
+Record ID 307-9 Baby (ID: 12-0009-1) of Goldi
+Neonatal Sepsis Screening
+Record ID
+307-9
+This form is to be completed daily for all neonates enrolled in the ICMR Emollient Study to screen for signs of
+sepsis or clinical deterioration. It draws information from physician assessments and bedside observations.
+The form should be ﬁlled once every 24 hours using direct clinical evaluation, vital signs, feeding records, and
+laboratory results. All ﬁelds must be completed; select 'Not Observed' if a parameter was not assessed.
+यह फॉर्म ICMR इमोलिएंट अध्ययन में नामांकित सभी नवजात शिशुओं के लिए प्रतिदिन भरना अनिवार्य है, ताकि सेप्सि
+स या स्वाास्थ्य
+गिरावट के लक्षणों की पहचान की जा सके। इसमें चिकित्सक के मूल्यांांकन और बिस्तर के पास की गई देखभाल से जानकारी ली जाती है।
+फॉर्म हर 24 घंटे में एक बार भरना है, जिसमें प्रत्यक्ष जांच, जीवन संकेत, फीडिंंग रिकॉर्ड और लैब रिपोर्ट शामिल हों। सभी प्रश्न भरना
+अनिवार्य है; यदि कोई पैरामीटर नहीं देखा गया हो, तो 'Not Observed' विकल्प चुनें।
+Section A: General Information (Pre-ﬁlled from the form)
+ 
+Baby Details:-
+Baby's Name
+b/o Goldi
+Hospital Name
+GSVM Medical College
+Hospital Reg No
+20250514243
+Mother's Name
+Goldi
+Fathers Name
+Sumit
+Enrollment Date
+25-09-2025 08:40
+Enrolled Baby's UID
+12-0009-1
+ 
+5 - Date of Neonatal Sepsis Screening [नवजात सेप्सि
+स
+स्क्रीीनिंंग की तिथि (DD/MM/YYYY HH:MM)]:
+* must provide value
+29-09-2025 16:12
+Time is in 24 hors format. So 2:02 PM would be 14:02. By
+entering 2:02 you refer to 2:02 AM i.e the early morning time
+Section B: Clinical Assessment
+This section documents key clinical signs in the newborn that may indicate sepsis or clinical deterioration.
+This section should be completed using a combination of data from the physician's checklist, direct bedside
+observation, and interviews with medical staﬀ. Ensure calm and safe handling of the newborn throughout
+the assessment process.
+1 - Start Time/ Time Stamp of form ﬁlling: [फॉर्म भरने का
+शुरूआती समय]
+* must provide value
+29-09-2025 16:12
+3 - Hospital Code: [अस्पताल कोड]
+GSVM Medical College
+4 - Data collector name [डेटा कलेक्टर का नाम (सूची से चुनें)]:
+* must provide value
+Ambuj Saxena
+4/17/26, 3:43 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=834&page=neonatal_sepsis_scre…
+1/5
+
+================================================================================
+PAGE 49
+================================================================================
+
+नैदानिक मूल्यांांकन नवजात शिशु में सेप्सि
+स या स्वाास्थ्य गिरावट के संकेतों को दर्ज करता है। यह अनुभाग चिकित्सक की चेकलिस्ट,
+प्रत्यक्ष निरीक्षण, और चिकित्सा स्टाफ के साक्षात्काार से प्राप्त जानकारी के आधार पर भरा जाना चाहिए। मूल्यांांकन के दौरान शिशु को
+शांतिपूर्वक और सुरक्षि
+त तरीके से संभालना आवश्यक है।
+6 - Select the unit of temperature. [तापमान की इकाई चुनें।]
+* must provide value
+ °C
+ °F
+6.1 - Measure the newborn's temperature. [नवजात का
+तापमान मापें।]
+* must provide value
+35.7
+6.2 - Is the newborn kept on a radiant warmer? [क्याा
+नवजात को रेडिएंट वार्मर पर रखा गया है?]
+* must provide value
+हाँ (Yes)
+6.3 - Does the newborn have a high temperature
+(≥38°C)?
+(Yes, if Q4 ≥38℃)
+[क्याा नवजात को तेज बुखार है (≥38℃/≥104 F )?]
+No
+  
+6.4 - Does the infant have a low body temperature (<
+35.5℃)?
+(Yes, if Q4 < 35.5℃)
+[क्याा नवजात का शरीर का तापमान कम है (< 35.5℃/(< 95.9 F)?]
+No
+  
+7 - What is the newborn's oxygen saturation (SpO₂) in
+percent? [नवजात की ऑक्सीीजन सेचुरेशन (SpO₂) कितनी है?]
+* must provide value
+97
+8 - What is the pulse rate of the newborn? [नवजात की
+नाड़ीी दर (pulse rate) कितनी है?]
+* must provide value
+158
+8.1 - Is the newborn having tachycardia? (Yes, if Q8 ≥180
+bpm) 
+[क्याा नवजात की धड़कन तेज (tachycardia) है? (अगर bpm
+≥180)]
+No
+  
+8.2 - Is the newborn having bradycardia? (Yes, if Q8 < 80
+bpm)
+[क्याा नवजात की धड़कन धीमी (bradycardia) है? (अगर bpm <
+80)]
+No
+  
+9 - Count the breaths in one minute. (Ensure the baby is
+calm when you are measuring.) [एक मिनट में श्वासों (सांस) की
+गिनती करें। (सुनिश्चित करें कि मापते समय शिशु शांत हो।]
+* must provide value
+58
+10 - Does the baby has fast breathing?
+No
+  
+11 - Are you able to take chest video of the newborn
+* must provide value
+नहीं (No)
+11.1 - Why you could not make a video, the reason for
+that
+Baby On Invasive Ventilation  And Minimal 
+4/17/26, 3:43 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=834&page=neonatal_sepsis_scre…
+2/5
+
+================================================================================
+PAGE 50
+================================================================================
+
+* must provide value
+12 - Is the newborn kept on a non-invasive ventilator?
+[क्याा नवजात नॉन-इनवेसिव वेंटिलेटर पर है?]
+* must provide value
+नहीं (No)
+12.2 - Is the newborn kept on a invasive mechanical
+ventilator? [क्याा नवजात को इनवेसिव मेकैनिकल वेंटिलेटर पर
+रखा गया है?]
+* must provide value
+हाँ (Yes)
+13 - Is the newborn breathing rapidly? (Yes, if Q2 ≥60
+breath per minute)
+[क्याा नवजात तेज सांस ले रहा है? (अगर ≥60 प्रति मिनट)]
+* must provide value
+No
+  
+13.1 - Is the newborn experiencing bradypnea? (Yes, if
+Q2 < 30 breath per minute)
+[क्याा नवजात की सांसें धीमी हैं? (अगर < 30 प्रति मिनट)]
+(Autogenerated)
+No
+  
+15 - What is the type of cry observed in the newborn?
+[नवजात का रोना किस प्रकार का है?]
+* must provide value
+नहीं रोना,(अनुपस्थि
+त), Absent cry
+16 - What is the muscle tone of the newborn?
+[नवजात की मांसपेशियों की टोन कैसी है?]
+ढीली मांसपेशियाँ (लिम्प), Limp
+17 - Has the newborn shown any of the following
+neurological signs?
+[क्याा नवजात में नीचे दिए गए किसी भी तंत्रिका (न्यूरोलॉजिकल) लक्षण
+को देखा गया है?]
+(Multi-select - mark all that apply)
+ दौरे (फिट्स), Convulsions (seizures)
+ असामान्य हरकतें, Abnormal movements
+ का अकड़ााव / आर्चिंग, Body Arching / Rigidity
+ इनमें से कोई नहीं, None of the above
+18 - What is the newborn's skin colour? [नवजात की त्वचा
+का रंग क्याा है?]
+* must provide value
+गुलाबी, Pink
+19 - What did the skin perfusion and hydration
+assessments reveal?
+[त्वचा से जुड़ीी परफ्यूूजन और हाइड्रेेशन की जांच में क्याा पाया गया?]
+(Select all that apply)
+* must provide value
+ कैपिलरी रीफिल समय > 3 सेकंड था, Capillary reﬁll
+time (CRT) > 3 seconds
+ त्वचा सामान्य स्थि
+ति में लौटने में >2 सेकंड ले रही थी,
+Skin pinch return time (Turgor) > 2 seconds
+ इनमें से कोई नहीं, None of the above
+20, Is there any bleeding observed in the newborn? [क्याा
+नवजात में कहीं से रक्तस्रााव (ब्लीडिंंग) हो रहा है?]
+* must provide value
+नहीं, No
+21 - Is the anterior fontanelle of the newborn bulging?
+[क्याा नवजात के सिर का अगला मुलायम हिस्साा (एंटीरियर फॉन्टेेनेल)
+फूला हुआ है?]
+* must provide value
+नहीं (No)
+4/17/26, 3:43 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=834&page=neonatal_sepsis_scre…
+3/5
+
+================================================================================
+PAGE 51
+================================================================================
+
+22 - Has the newborn shown any of the following
+abdominal or gastrointestinal signs?
+[क्याा नवजात के पेट या पाचन से संबंधित कोई लक्षण देखे गए हैं?]
+(Multi-select - mark all that apply)
+* must provide value
+ दूध उल्टीी करना या मुँह से बाहर निकालना
+(रिगर्जिटेशन), Regurgitation/vomiting
+ IFT के माध्यम से फीडिंंग में अवशेष देखा गया,
+Residuals seen via IFT
+ पेट फूला हुआ है, Abdominal distension
+ अन्य - कृपया स्पष्ट करें, Other - please specify
+ इनमें से कोई नहीं, None of the above
+23 - Does the newborn have any of the following skin or
+umbilical signs?
+[क्याा नवजात की त्वचा या नाभि में नीचे दिए गए कोई लक्षण दिखाई दे
+रहे हैं?]
+(Multi-select - mark all that apply)
+* must provide value
+ त्वचा पर फोड़ेे/दाने - 10 से कम, Pustules/rash - <
+10
+ त्वचा पर फोड़ेे/दाने - 10 या अधिक, Pustules/rash -
+≥10
+ फोड़ाा / पस वाला घाव, Abscess present
+ नाभि लाल दिख रही है, Umbilicus is red
+ नाभि से मवाद निकल रहा है, Umbilicus is
+discharging pus
+ नवजात को पीलिया है, Jaundice present
+ इनमें से कोई नहीं, None of the above
+24 - What is the general condition of the newborn?
+[नवजात की सामान्य अवस्थाा कैसी है?]
+* must provide value
+सुस्त है, Lethargic
+25 - What is the clinician's impression regarding sepsis?
+[चिकित्सक की राय में नवजात में सेप्सि
+स के क्याा संकेत हैं?]
+* must provide value
+पुष्ट सेप्सि
+स, Conﬁrmed sepsis
+25.1 - Has the doctor prescribed any blood test for the
+newborn in the past 24 hours? [क्याा डॉक्टर ने नवजात के लिए
+कोई ब्लड टेस्ट लिखवाया है (पिछले 24 घंटे में)?]
+* must provide value
+नहीं (No)
+Section C: Sepsis Screening/ Blood Tests
+This section captures all diagnostic tests conducted or planned in the past 24 hours to support sepsis
+evaluation in the newborn. Information should be entered based on hospital records, lab reports, and
+physician orders. Ensure that the test results are recorded accurately, and upload relevant reports wherever
+applicable.
+यह अनुभाग पिछले 24 घंटों में नवजात की सेप्सि
+स जांच के लिए की गई या योजनाबद्ध सभी नैदानिक जांचों को दर्ज करता है। जानकारी
+अस्पताल की फाइल, लैब रिपोर्ट और चिकित्सक के निर्देशों के आधार पर भरी जानी चाहिए। कृपया रिपोर्ट में दिए गए परिणामों को सही-
+सही दर्ज करें और जहाँ आवश्यक हो वहाँ पीडीएफ रिपोर्ट अपलोड करें।
+31 - Did the facility planned/conducted a pro-calcitonin
+test for the newborn? [क्याा नवजात के लिए प्रो-कल्सीीटोनिन टेस्ट
+किया गया है या करने का निर्देश है?]
+* must provide value
+नहीं (No)
+Section D: Adverse Skin Events and Serious Adverse Events Screening (त्वचा से संबंधित प्रतिकूल घटनाएं और गंभीर
+प्रतिकूल घटना की जांच)
+This section assesses whether the newborn has experienced any adverse skin reactions or serious adverse
+events, including phototherapy-related eﬀects and non-infectious hyperthermia. Information should be
+gathered through direct observation, caregiver reports, clinical records, or staﬀ interviews. (Past 24 hours)
+4/17/26, 3:43 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=834&page=neonatal_sepsis_scre…
+4/5
+
+================================================================================
+PAGE 52
+================================================================================
+
+इस अनुभाग में यह मूल्यांांकन किया जाता है कि क्याा नवजात को कोई प्रतिकूल त्वचा प्रतिक्रि
+या या गंभीर प्रतिकूल घटना हुई है, जैसे
+फोटोथेरेपी से जुड़ीी त्वचा की समस्यााएं या संक्रमण से असंबंधित तेज बुखार (हाइपरथर्मिया)। जानकारी सीधे निरीक्षण, देखभालकर्ता की
+रिपोर्ट, क्लि
+निकल रिकॉर्ड या स्टाफ इंटरव्यूू के माध्यम से एकत्र की जा सकती है। (Past 24 hours)
+ 
+34 - Has the newborn shown any severe, generalised
+hypersensitivity reaction?
+(Such as widespread rash, swelling, redness, blistering,
+or diﬃculty in breathing)
+[क्याा नवजात को कोई गंभीर एलर्जी प्रतिक्रि
+या हुई है?
+(जैसे - पूरे शरीर में चकत्ते, सूजन, फफोले, सांस लेने में तकलीफ या
+त्वचा का लाल हो जाना)]
+* must provide value
+नहीं (No)
+35 - Is the newborn kept in a photo-therapy unit? [क्याा
+नवजात फोटोथेरेपी यूनिट में है?]
+* must provide value
+नहीं (No)
+36 - Remarks
+[यह फॉर्म भरते समय कुछ टिप्पणी हो तो वह अंकित कीजिए]:
+Shishu Ki Condition Severe Thi Shishu Aaj L
+37 - GPS Latitude
+[जीपीएस लोकेशन]:
+26.4699904
+   
+  reset
+38 - GPS Longitude
+[जीपीएस लोकेशन]:
+80.314368
+   
+  reset
+Form Status
+Complete?
+Complete
+Update
+Update
+-- Cancel --
+4/17/26, 3:43 PM
+ICMR Emollient - Main | REDCap
+https://redcap.cel-one.org/Appl/RedCap/redcap/redcap_v15.5.28/DataEntry/index.php?pid=152&id=307-9&event_id=834&page=neonatal_sepsis_scre…
+5/5
+
+================================================================================
+PAGE 53
+================================================================================
+
+Date 
+Nane 
+25-Sep-2025 
+BABY OF GOLDI 
+Ret By 
+Dr SELF 
+Receipl 
+NA 
+Requested Test 
+o Tme 
+lnvestigation 
+24 HOURS PATHOLOGY LAB 
+VER FUNCTION TEST 
+in Bilirubin Total 
+un Bil1rub1n Direct 
+Ium Biirubin lnd1rect 
+P 
+n Proleins 
+1nAIbuiin 
+uii Globulns 
+1JAG Ratio 
+ECTROLY TE 
+CBC, KFT LFI Electrotytu CRP 
+25-Sep-2025 04 58 AM 
+a Alkaline Phosphatase 
+Potassiutn (K* 
+tan loni 
+CalcIuni (Ca* ) 
+G.S.V.M. MEDICAL COLLLGL 
+I \AT \JPARAL& ASSOCIATDIOSPITAL 
+Reg/Ref: LLR-45350 / 1825843 
+Plhono 
+Validate 
+25-Sep-2025 10 03 PM 
+Observed Values 
+3.2 mgld. 
+0.8 mgldl. 
+2.4 mg dl. 
+6 3 9l 
+2.3 
+4 gm/dL 
+057 1 Ratio 
+64 IU/L 
+35 IU/L 
+622 IUIL 
+137 9 meql 
+53 meq/ 
+4.08 mgdl. 
+BIOCHEMISTRY 
+0 47 mg/L 
+End of report 
+Collected At 
+LLR 
+IFemale 
+Age/Sex 
+Prn Tme 25-Sep-2025 10 10 PM 
+Biological Ref 
+Interval 
+0-12 
+0-02 
+02-07 
+60-83 
+3 1 4 8 
+25-35 
+40 
+34 
+240 
+150 
+35-53 
+45-55 
+For Patiiolog1st 
+137 
+0-6
+
+================================================================================
+PAGE 54
+================================================================================
+
+Date 
+Name 
+Rel By 
+Dr SELF 
+Receipt 
+NA 
+investgation 
+ogio 
+25-Sep-2025 
+BASY OF GOLDI 
+Requested Test 
+CBC, KFT LFT Elccirolyte CR 
+Coll Time 25-Sep-2025 04:58 AM 
+Validate 
+piete Blood Count 
+di Leucocyle Count ( TLC I 
+Differential % Leucocyte Counts: 
+3phocyles 
+EUSINophils 
+leled Neulrophis 
+Aoucyte 
+3ascphl 
+24 HOURS PATHOLOGY LAB 
+Piatelet Count 
+Tcial RBCs 
+RUW 
+1CV (Mean 
+Cel 
+Volume) 
+1CH (Mlean Corpus Haenoglobn) 
+i4CHC (Mean Corpus Hb Conc) 
+1PCV Packed Cell Volume) 
+AbS Neutrophls 
+Abs Lymphocytes 
+US Eosnophils 
+K.DNEY PANEL 
+Diflerential Absolute Leucocyte Counts: 
+SewnCteatmue 
+GS\\ MEDICAL COLI! GL 
+RegRet LLR45350 
+1825843 
+Pnons 
+25-Sep-2025 10-03 PM 
+itror ilt may show nterlaboratory vanaion 
+Observed Values 
+HEMAO & BIO CHEMICAL TEST 
+20.6 g/dL 
+15500 cellsimun 
+30 
+08 % 
+02 % 
+00 
+257 Lac cells 
+m 
+94 1 
+5.44 million cells/mn 
+119.7 (. 
+37.8 pg 
+31.6 gldl 
+18.4 % 
+65.1 % 
+9.9 10° /mm 
+3 10 P Imm 
+2.6 10 Imm 
+Collectea At 
+LLR 
+37 mg dL 
+06 mg dl 
+Age Sex 
+Female 
+Prn. Time 25-Sep-2025 10:10 PM 
+Biological Ret 
+lnterval 
+12 
+6 
+4000 
+40 80 
+1 6 
+40 
+154 5 
+8-11 
+38 48 
+80 
+100 
+0000 
+27 
+32 
+32- 35 
+115- 14 5 
+36 46 
+12-S 00 
+05-5 00 
+O 020 3
+
+================================================================================
+PAGE 55
+================================================================================
+
+
+

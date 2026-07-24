@@ -13,19 +13,25 @@ from typing import Any
 from pydantic import BaseModel, ConfigDict, Field
 
 
-class PageData(BaseModel):
+class PDFPage(BaseModel):
     """
-    Represents a single extracted PDF page.
+    Represents a single extracted page from a REDCap-generated PDF.
 
     Attributes:
-        page_number: 1-based page number in the PDF.
+        source_file: Name of the source PDF.
+        page_number: 1-based page number within the PDF.
         text: Extracted text content from the page.
-        metadata: Optional metadata associated with the page.
+        metadata: Optional page metadata for future use.
     """
 
     model_config = ConfigDict(
         frozen=True,
         extra="forbid",
+    )
+
+    source_file: str = Field(
+        default="",
+        description="Name of the source PDF file.",
     )
 
     page_number: int = Field(
@@ -36,10 +42,10 @@ class PageData(BaseModel):
 
     text: str = Field(
         default="",
-        description="Extracted text from the page.",
+        description="Extracted text content from the page.",
     )
 
     metadata: dict[str, Any] = Field(
         default_factory=dict,
-        description="Optional metadata for the page.",
+        description="Optional metadata associated with the page.",
     )

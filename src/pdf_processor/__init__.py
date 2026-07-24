@@ -19,12 +19,12 @@ This module intentionally does NOT perform:
 - Narrative generation
 """
 
-from .page import PageData
+from .page import PDFPage
 from .pdf_reader import PDFReader
 from .extractor import PDFExtractor
 
 __all__ = [
-    "PageData",
+    "PDFPage",
     "PDFReader",
     "PDFExtractor",
 ]

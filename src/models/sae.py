@@ -7,8 +7,6 @@ Serious Adverse Event (SAE) REDCap form.
 
 from __future__ import annotations
 
-from datetime import date
-
 from pydantic import BaseModel, ConfigDict, Field
 
 
@@ -47,26 +45,31 @@ class SAEData(BaseModel):
 
     patient_name: str | None = Field(
         default=None,
+        description="Patient's name.",
     )
 
     sex: str | None = Field(
         default=None,
+        description="Patient's sex.",
     )
 
     age_days: int | None = Field(
         default=None,
+        description="Patient's age in days.",
     )
 
-    date_of_birth: date | None = Field(
+    date_of_birth: str | None = Field(
         default=None,
+        description="Patient's date of birth.",
     )
 
     # ------------------------
     # SAE Details
     # ------------------------
 
-    event_date: date | None = Field(
+    event_date: str | None = Field(
         default=None,
+        description="Date when adverse event started.",
     )
 
     event_description: str | None = Field(
@@ -97,12 +100,14 @@ class SAEData(BaseModel):
         default=None,
     )
 
-    admission_date: date | None = Field(
+    admission_date: str | None = Field(
         default=None,
+        description="Hospital admission date and time.",
     )
 
-    discharge_date: date | None = Field(
+    discharge_date: str | None = Field(
         default=None,
+        description="Hospital discharge date.",
     )
 
     # ------------------------
@@ -113,6 +118,7 @@ class SAEData(BaseModel):
         default=None,
     )
 
-    reporting_date: date | None = Field(
+    reporting_date: str | None = Field(
         default=None,
+        description="Form reporting date and time.",
     )

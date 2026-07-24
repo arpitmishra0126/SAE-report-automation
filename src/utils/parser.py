@@ -1,19 +1,13 @@
 """
-Text parsing utilities.
-
-Provides reusable helper functions for extracting values
-from REDCap PDF text.
+Utility functions for parsing REDCap PDF text.
 
 Responsibilities
 ----------------
-- Locate field labels.
-- Extract values following labels.
-- Provide safe parsing helpers.
-
-This module intentionally does NOT:
-- Detect forms.
-- Perform OCR.
-- Validate extracted values.
+- Normalize extracted text.
+- Extract values by label.
+- Extract multiline values.
+- Extract dates, datetimes and numbers.
+- Check whether labels exist.
 """
 
 from __future__ import annotations
@@ -24,38 +18,52 @@ from typing import Optional
 
 class TextParser:
     """
-    Utility class for parsing REDCap page text.
+    Generic parser for REDCap PDF text.
     """
 
     @staticmethod
     def normalize(text: str) -> str:
         """
         Normalize whitespace.
-
-        Args:
-            text:
-                Raw extracted page text.
-
-        Returns:
-            Normalized text.
         """
-        return re.sub(r"\s+", " ", text).strip()
+        text = text.replace("\r", "")
+        text = re.sub(r"[ \t]+", " ", text)
+        text = re.sub(r"\n{2,}", "\n", text)
+
+        return text.strip()
+
+    @staticmethod
+    def exists(text: str, label: str) -> bool:
+        """
+        Check whether a label exists.
+        """
+        return re.search(
+            re.escape(label),
+            text,
+            flags=re.IGNORECASE,
+        ) is not None
 
     @staticmethod
     def get_value(text: str, label: str) -> Optional[str]:
         """
-        Extract the value appearing immediately after a label.
+        Extract the first non-empty line following a label.
 
         Example
         -------
-        Hospital Name GSVM Medical College
+        Hospital Name
+        GSVM Medical College
 
-        get_value(text, "Hospital Name")
-
-        -> GSVM Medical College
+        ->
+        GSVM Medical College
         """
 
-        pattern = rf"{re.escape(label)}\s*(.+)"
+        text = TextParser.normalize(text)
+
+        pattern = (
+            rf"{re.escape(label)}"
+            r"\s*\n?"
+            r"([^\n]+)"
+        )
 
         match = re.search(
             pattern,
@@ -68,34 +76,68 @@ class TextParser:
 
         value = match.group(1).strip()
 
-        if not value:
+        return value or None
+
+    @staticmethod
+    def get_multiline_value(
+        text: str,
+        start_label: str,
+        end_label: str | None = None,
+    ) -> Optional[str]:
+        """
+        Extract multiline text.
+
+        If end_label is provided,
+        extraction stops before it.
+        """
+
+        text = TextParser.normalize(text)
+
+        if end_label:
+
+            pattern = (
+                rf"{re.escape(start_label)}"
+                r"(.*?)"
+                rf"{re.escape(end_label)}"
+            )
+
+        else:
+
+            pattern = (
+                rf"{re.escape(start_label)}"
+                r"(.*)"
+            )
+
+        match = re.search(
+            pattern,
+            text,
+            flags=re.IGNORECASE | re.DOTALL,
+        )
+
+        if not match:
             return None
 
-        return value
+        value = match.group(1).strip()
+
+        return value or None
 
     @staticmethod
-    def exists(text: str, label: str) -> bool:
+    def get_date(
+        text: str,
+        label: str,
+    ) -> Optional[str]:
         """
-        Return True if a label exists.
-        """
+        Extract a date.
 
-        return re.search(
-            re.escape(label),
-            text,
-            flags=re.IGNORECASE,
-        ) is not None
-
-    @staticmethod
-    def get_date(text: str, label: str) -> Optional[str]:
-        """
-        Extract a DD-MM-YYYY or DD/MM/YYYY date
-        following a label.
+        Supports:
+        DD-MM-YYYY
+        DD/MM/YYYY
         """
 
         pattern = (
             rf"{re.escape(label)}"
             r".*?"
-            r"(\d{2}[-/]\d{2}[-/]\d{4})"
+            r"(\d{2}[/-]\d{2}[/-]\d{4})"
         )
 
         match = re.search(
@@ -110,19 +152,22 @@ class TextParser:
         return match.group(1)
 
     @staticmethod
-    def get_datetime(text: str, label: str) -> Optional[str]:
+    def get_datetime(
+        text: str,
+        label: str,
+    ) -> Optional[str]:
         """
-        Extract a date-time value.
+        Extract a date-time.
 
         Example
-        -------
+
         25-09-2025 08:40
         """
 
         pattern = (
             rf"{re.escape(label)}"
             r".*?"
-            r"(\d{2}[-/]\d{2}[-/]\d{4}\s+\d{2}:\d{2})"
+            r"(\d{2}[/-]\d{2}[/-]\d{4}\s+\d{2}:\d{2})"
         )
 
         match = re.search(
@@ -137,9 +182,12 @@ class TextParser:
         return match.group(1)
 
     @staticmethod
-    def get_number(text: str, label: str) -> Optional[int]:
+    def get_number(
+        text: str,
+        label: str,
+    ) -> Optional[int]:
         """
-        Extract an integer value following a label.
+        Extract an integer.
         """
 
         pattern = (
@@ -158,3 +206,34 @@ class TextParser:
             return None
 
         return int(match.group(1))
+
+    @staticmethod
+    def get_all_matches(
+        text: str,
+        pattern: str,
+    ) -> list[str]:
+        """
+        Return every regex match.
+        """
+
+        return re.findall(
+            pattern,
+            text,
+            flags=re.IGNORECASE,
+        )
+
+    @staticmethod
+    def clean(value: str | None) -> Optional[str]:
+        """
+        Final cleanup.
+        """
+
+        if value is None:
+            return None
+
+        value = value.strip()
+
+        if value == "":
+            return None
+
+        return value

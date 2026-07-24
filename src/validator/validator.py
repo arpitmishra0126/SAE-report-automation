@@ -17,16 +17,6 @@ class Validator:
     def validate(self, summary: CaseSummary) -> CaseSummary:
         """
         Validate the extracted case summary.
-
-        Parameters
-        ----------
-        summary:
-            Extracted CaseSummary object.
-
-        Returns
-        -------
-        CaseSummary
-            Updated CaseSummary containing validation messages.
         """
 
         messages: list[str] = []
@@ -72,11 +62,18 @@ class Validator:
         # -------------------------------------------------
 
         if summary.dcm:
-           for index, dcm in enumerate(summary.dcm, start=1):
-               if not dcm.monitoring_date:
-                   messages.append(f"Missing monitoring date in DCM record {index}.")
+
+            for index, dcm in enumerate(summary.dcm, start=1):
+
+                if not dcm.monitoring_date:
+                    messages.append(
+                        f"Missing monitoring date in DCM record {index}."
+                    )
+
         else:
-            messages.append("Daily Clinical Monitoring forms not found.")
+            messages.append(
+                "Daily Clinical Monitoring forms not found."
+            )
 
         # -------------------------------------------------
         # NSS Validation
@@ -84,14 +81,20 @@ class Validator:
 
         if summary.nss:
 
-            if not summary.nss.assessment_date:
-                messages.append("Missing NSS assessment date.")
+            for index, nss in enumerate(summary.nss, start=1):
+
+                if not nss.assessment_date:
+                    messages.append(
+                        f"Missing NSS assessment date in record {index}."
+                    )
 
         else:
-            messages.append("Neonatal Sepsis Screening form not found.")
-
+            messages.append(
+                "Neonatal Sepsis Screening form not found."
+            )
+       
         # -------------------------------------------------
-        # Store validation messages
+        # Finalize
         # -------------------------------------------------
 
         summary.validation_messages = messages

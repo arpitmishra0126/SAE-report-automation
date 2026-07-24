@@ -21,62 +21,127 @@ class TextParser:
     Generic parser for REDCap PDF text.
     """
 
+    _IGNORE_LINES = {
+        "",
+        "update",
+        "complete",
+        "switch",
+        "reset",
+        "-- cancel --",
+    }
+
     @staticmethod
     def normalize(text: str) -> str:
         """
-        Normalize whitespace.
+        Normalize REDCap extracted text.
         """
+
         text = text.replace("\r", "")
+
         text = re.sub(r"[ \t]+", " ", text)
+
+        text = re.sub(
+            r"\*+\s*must provide value",
+            "",
+            text,
+            flags=re.IGNORECASE,
+        )
+
+        text = re.sub(
+            r"use M icon next to field for missing values",
+            "",
+            text,
+            flags=re.IGNORECASE,
+        )
+
         text = re.sub(r"\n{2,}", "\n", text)
 
         return text.strip()
 
     @staticmethod
     def exists(text: str, label: str) -> bool:
-        """
-        Check whether a label exists.
-        """
-        return re.search(
-            re.escape(label),
-            text,
-            flags=re.IGNORECASE,
-        ) is not None
-
-    @staticmethod
-    def get_value(text: str, label: str) -> Optional[str]:
-        """
-        Extract the first non-empty line following a label.
-
-        Example
-        -------
-        Hospital Name
-        GSVM Medical College
-
-        ->
-        GSVM Medical College
-        """
-
         text = TextParser.normalize(text)
 
         pattern = (
+            rf"(?:\d+(?:\.\d+)?\s*[-–]\s*)?"
             rf"{re.escape(label)}"
-            r"\s*\n?"
-            r"([^\n]+)"
         )
 
-        match = re.search(
-            pattern,
-            text,
+        return (
+            re.search(
+                pattern,
+                text,
+                flags=re.IGNORECASE,
+            )
+            is not None
+        )
+
+    @staticmethod
+    def _clean_candidate(value: str) -> Optional[str]:
+
+        value = value.strip()
+
+        if not value:
+            return None
+
+        lower = value.lower()
+
+        if lower in TextParser._IGNORE_LINES:
+            return None
+
+        if "must provide value" in lower:
+            return None
+
+        if lower.startswith("http"):
+            return None
+
+        if lower.startswith("https"):
+            return None
+
+        if lower.startswith("record id"):
+            return None
+
+        if lower.startswith("icmr emollient"):
+            return None
+
+        return value
+
+    @staticmethod
+    def get_value(
+        text: str,
+        label: str,
+    ) -> Optional[str]:
+
+        text = TextParser.normalize(text)
+
+        lines = text.splitlines()
+
+        pattern = re.compile(
+            rf"(?:\d+(?:\.\d+)?\s*[-–]\s*)?"
+            rf"{re.escape(label)}",
             flags=re.IGNORECASE,
         )
 
-        if not match:
-            return None
+        for i, line in enumerate(lines):
 
-        value = match.group(1).strip()
+            if not pattern.search(line):
+                continue
 
-        return value or None
+            after = pattern.sub("", line).strip(" :-")
+
+            cleaned = TextParser._clean_candidate(after)
+
+            if cleaned:
+                return cleaned
+
+            for candidate in lines[i + 1:i + 8]:
+
+                cleaned = TextParser._clean_candidate(candidate)
+
+                if cleaned:
+                    return cleaned
+
+        return None
 
     @staticmethod
     def get_multiline_value(
@@ -84,40 +149,46 @@ class TextParser:
         start_label: str,
         end_label: str | None = None,
     ) -> Optional[str]:
-        """
-        Extract multiline text.
-
-        If end_label is provided,
-        extraction stops before it.
-        """
 
         text = TextParser.normalize(text)
 
-        if end_label:
-
-            pattern = (
-                rf"{re.escape(start_label)}"
-                r"(.*?)"
-                rf"{re.escape(end_label)}"
-            )
-
-        else:
-
-            pattern = (
-                rf"{re.escape(start_label)}"
-                r"(.*)"
-            )
-
-        match = re.search(
-            pattern,
+        start = re.search(
+            re.escape(start_label),
             text,
-            flags=re.IGNORECASE | re.DOTALL,
+            flags=re.IGNORECASE,
         )
 
-        if not match:
+        if not start:
             return None
 
-        value = match.group(1).strip()
+        begin = start.end()
+
+        if end_label:
+
+            end = re.search(
+                re.escape(end_label),
+                text[begin:],
+                flags=re.IGNORECASE,
+            )
+
+            if end:
+                value = text[begin:begin + end.start()]
+            else:
+                value = text[begin:]
+
+        else:
+            value = text[begin:]
+
+        cleaned_lines = []
+
+        for line in value.splitlines():
+
+            cleaned = TextParser._clean_candidate(line)
+
+            if cleaned:
+                cleaned_lines.append(cleaned)
+
+        value = "\n".join(cleaned_lines).strip()
 
         return value or None
 
@@ -126,17 +197,12 @@ class TextParser:
         text: str,
         label: str,
     ) -> Optional[str]:
-        """
-        Extract a date.
 
-        Supports:
-        DD-MM-YYYY
-        DD/MM/YYYY
-        """
+        text = TextParser.normalize(text)
 
         pattern = (
             rf"{re.escape(label)}"
-            r".*?"
+            r".{0,300}?"
             r"(\d{2}[/-]\d{2}[/-]\d{4})"
         )
 
@@ -146,27 +212,22 @@ class TextParser:
             flags=re.IGNORECASE | re.DOTALL,
         )
 
-        if not match:
-            return None
+        if match:
+            return match.group(1)
 
-        return match.group(1)
+        return None
 
     @staticmethod
     def get_datetime(
         text: str,
         label: str,
     ) -> Optional[str]:
-        """
-        Extract a date-time.
 
-        Example
-
-        25-09-2025 08:40
-        """
+        text = TextParser.normalize(text)
 
         pattern = (
             rf"{re.escape(label)}"
-            r".*?"
+            r".{0,300}?"
             r"(\d{2}[/-]\d{2}[/-]\d{4}\s+\d{2}:\d{2})"
         )
 
@@ -176,45 +237,37 @@ class TextParser:
             flags=re.IGNORECASE | re.DOTALL,
         )
 
-        if not match:
-            return None
+        if match:
+            return match.group(1)
 
-        return match.group(1)
+        return None
 
     @staticmethod
     def get_number(
         text: str,
         label: str,
     ) -> Optional[int]:
-        """
-        Extract an integer.
-        """
 
-        pattern = (
-            rf"{re.escape(label)}"
-            r".*?"
-            r"(\d+)"
-        )
-
-        match = re.search(
-            pattern,
+        value = TextParser.get_value(
             text,
-            flags=re.IGNORECASE | re.DOTALL,
+            label,
         )
 
-        if not match:
+        if value is None:
             return None
 
-        return int(match.group(1))
+        match = re.search(r"\d+", value)
+
+        if match:
+            return int(match.group())
+
+        return None
 
     @staticmethod
     def get_all_matches(
         text: str,
         pattern: str,
     ) -> list[str]:
-        """
-        Return every regex match.
-        """
 
         return re.findall(
             pattern,
@@ -223,15 +276,20 @@ class TextParser:
         )
 
     @staticmethod
-    def clean(value: str | None) -> Optional[str]:
-        """
-        Final cleanup.
-        """
+    def clean(
+        value: str | None,
+    ) -> Optional[str]:
 
         if value is None:
             return None
 
         value = value.strip()
+
+        value = re.sub(
+            r"\s+",
+            " ",
+            value,
+        )
 
         if value == "":
             return None

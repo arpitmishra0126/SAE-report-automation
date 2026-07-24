@@ -1,121 +1,157 @@
 """
 Form segmentation engine.
 
-This module identifies logical REDCap forms from a sequence of PDF pages.
-
-Responsibilities
-----------------
-- Detect form boundaries.
-- Group consecutive pages belonging to the same form.
-- Produce structured Form objects.
-
-This module intentionally does NOT:
-- Extract clinical information.
-- Perform OCR.
-- Clean page text.
+Groups consecutive PDF pages into logical REDCap forms.
 """
 
 from __future__ import annotations
 
-from pdf_processor.page import PDFPage
+from pdf_processor.page import PageData
 
 from .form import Form, FormType
 
 
 class FormDetector:
     """
-    Detects REDCap forms from extracted PDF pages.
+    Detect REDCap forms from extracted PDF pages.
     """
 
-    # Form title signatures observed across REDCap exports
     FORM_SIGNATURES: dict[FormType, tuple[str, ...]] = {
-        FormType.SAE: (
-            "Serious Adverse Event",
-        ),
         FormType.MATERNAL: (
             "Maternal History Module",
+            "Maternal History",
         ),
+
         FormType.DCM: (
             "Daily Clinical Monitoring",
         ),
+
         FormType.NSS: (
+            "Neonatal Sepsis Screening",
             "Neonatal Sepsis Surveillance",
         ),
+
+        # Standalone SAE form only
+        FormType.SAE: (
+            "Serious Adverse Event\nRecord ID",
+            "Serious Adverse Event\r\nRecord ID",
+            "Serious Adverse Event Record ID",
+        ),
+
         FormType.LAB: (
             "Laboratory",
+            "Laboratory Investigations",
         ),
     }
 
-    def segment(self, pages: list[PDFPage]) -> list[Form]:
-        """
-        Segment PDF pages into logical REDCap forms.
-
-        Args:
-            pages:
-                List of extracted PDF pages.
-
-        Returns:
-            List of detected Form objects.
-        """
+    def segment(
+        self,
+        pages: list[PageData],
+    ) -> list[Form]:
 
         forms: list[Form] = []
 
-        current_form_type: FormType | None = None
-        current_pages: list[PDFPage] = []
+        current_type = FormType.UNKNOWN
+        current_pages: list[PageData] = []
+
+        print("\n" + "=" * 70)
+        print("FORM DETECTION")
+        print("=" * 70)
 
         for page in pages:
 
-            detected_type = self._detect_form_type(page)
+            detected = self._detect_form_type(page)
 
-            # Start of a new form
-            if detected_type != FormType.UNKNOWN:
+            title = (
+                page.text.splitlines()[0]
+                if page.text.strip()
+                else "<EMPTY>"
+            )
+
+            print(
+                f"Page {page.page_number:03d} | "
+                f"{detected.name:<10} | "
+                f"{title[:90]}"
+            )
+
+            if detected != FormType.UNKNOWN:
 
                 if current_pages:
                     forms.append(
                         Form(
-                            form_type=current_form_type
-                            or FormType.UNKNOWN,
+                            form_type=current_type,
                             pages=current_pages,
                         )
                     )
 
-                current_form_type = detected_type
+                current_type = detected
                 current_pages = [page]
 
             else:
                 current_pages.append(page)
 
-        # Add the final form
         if current_pages:
             forms.append(
                 Form(
-                    form_type=current_form_type
-                    or FormType.UNKNOWN,
+                    form_type=current_type,
                     pages=current_pages,
                 )
             )
 
+        print("\nDetected Forms")
+        print("-" * 70)
+
+        for i, form in enumerate(forms, start=1):
+            print(
+                f"{i:02d}. "
+                f"{form.form_type.name:<10} "
+                f"Pages={len(form.pages):<3} "
+                f"Start={form.pages[0].page_number}"
+            )
+
+        print("=" * 70)
+
         return forms
 
-    def _detect_form_type(self, page: PDFPage) -> FormType:
-        """
-        Detect the REDCap form type for a page.
+    def _detect_form_type(
+        self,
+        page: PageData,
+    ) -> FormType:
 
-        Args:
-            page:
-                PDF page.
+        text = page.text
 
-        Returns:
-            Detected FormType.
-        """
+        lower = text.casefold()
 
-        text = page.text.lower()
+        # -----------------------------
+        # Reject NSS subsection first
+        # -----------------------------
+        if (
+            "adverse skin events and serious adverse events screening"
+            in lower
+        ):
+            return FormType.UNKNOWN
 
+        # -----------------------------
+        # Detect standalone SAE form
+        # -----------------------------
+        if (
+            "serious adverse event" in lower
+            and "record id" in lower
+            and "enrolled baby's uid" in lower
+        ):
+            return FormType.SAE
+
+        # -----------------------------
+        # Other forms
+        # -----------------------------
         for form_type, signatures in self.FORM_SIGNATURES.items():
+
+            if form_type == FormType.SAE:
+                continue
 
             for signature in signatures:
 
-                if signature.lower() in text:
+                if signature.casefold() in lower:
                     return form_type
 
         return FormType.UNKNOWN

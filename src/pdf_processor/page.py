@@ -1,9 +1,21 @@
 """
 Data models for PDF pages.
 
-This module defines the structured representation of a single page extracted
-from a REDCap PDF. Every downstream module (form segmentation, extraction,
-validation, etc.) will operate on these page objects instead of raw PDF pages.
+Represents a single page extracted from a REDCap PDF.
+
+The model stores both plain text and structured layout information
+returned by PyMuPDF so downstream extractors can choose the most
+appropriate representation.
+
+Current users:
+- Form Detector
+- Extractors
+- Validator
+
+Future users:
+- Coordinate-based field extraction
+- Checkbox detection
+- OCR fallback
 """
 
 from __future__ import annotations
@@ -13,15 +25,9 @@ from typing import Any
 from pydantic import BaseModel, ConfigDict, Field
 
 
-class PDFPage(BaseModel):
+class PageData(BaseModel):
     """
-    Represents a single extracted page from a REDCap-generated PDF.
-
-    Attributes:
-        source_file: Name of the source PDF.
-        page_number: 1-based page number within the PDF.
-        text: Extracted text content from the page.
-        metadata: Optional page metadata for future use.
+    Structured representation of a PDF page.
     """
 
     model_config = ConfigDict(
@@ -29,23 +35,28 @@ class PDFPage(BaseModel):
         extra="forbid",
     )
 
-    source_file: str = Field(
-        default="",
-        description="Name of the source PDF file.",
-    )
-
     page_number: int = Field(
         ...,
         ge=1,
-        description="1-based page number within the PDF.",
+        description="1-based page number.",
     )
 
     text: str = Field(
         default="",
-        description="Extracted text content from the page.",
+        description="Plain text extracted from the page.",
+    )
+
+    blocks: list[Any] = Field(
+        default_factory=list,
+        description="PyMuPDF text blocks preserving layout.",
+    )
+
+    words: list[Any] = Field(
+        default_factory=list,
+        description="PyMuPDF word-level extraction with coordinates.",
     )
 
     metadata: dict[str, Any] = Field(
         default_factory=dict,
-        description="Optional metadata associated with the page.",
+        description="Page metadata.",
     )

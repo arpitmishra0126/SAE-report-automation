@@ -87,13 +87,19 @@ def main() -> None:
     Run the complete pipeline.
     """
 
-    pdf = input("Enter PDF path: ").strip()
+    # ---------- TEST PDF ----------
+    pdf = Path(
+        "data\\sample_pdfs\\307-9-merged-merged-compressed.pdf"
+    )
+    # ------------------------------
 
     pipeline = SAEPipeline()
 
     summary = pipeline.run(pdf)
 
-    print("\n✓ Pipeline completed successfully.\n")
+    print("\n" + "=" * 70)
+    print("PIPELINE COMPLETED SUCCESSFULLY")
+    print("=" * 70)
 
     print(f"Case ID : {summary.case_id}")
     print(f"Source  : {summary.source_pdf}")
@@ -110,6 +116,12 @@ def main() -> None:
 
     print("\nDOCX generated successfully.")
 
+    print("\n" + "=" * 70)
+    print("STRUCTURED DATA SENT TO LLM")
+    print("=" * 70)
+
+    # Pretty JSON
+    print(summary.model_dump_json(indent=2))
 
 if __name__ == "__main__":
     main()

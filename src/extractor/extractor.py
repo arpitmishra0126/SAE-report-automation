@@ -3,12 +3,6 @@ Extraction orchestrator.
 
 Coordinates all form-specific extractors and produces a complete
 CaseSummary object.
-
-Responsibilities
-----------------
-- Route each detected form to the correct extractor.
-- Combine extracted information.
-- Return a populated CaseSummary.
 """
 
 from __future__ import annotations
@@ -42,20 +36,29 @@ class Extractor:
 
         for form in forms:
 
-            if form.form_type == FormType.SAE:
-                summary.sae = self._sae.extract(form)
+            if not form.pages:
+                continue
 
-            elif form.form_type == FormType.MATERNAL:
-                summary.maternal = self._maternal.extract(form)
+            match form.form_type:
 
-            elif form.form_type == FormType.DCM:
-                summary.dcm.append(
-                    self._dcm.extract(form)
-                )
+                case FormType.SAE:
+                    summary.sae = self._sae.extract(form)
 
-            elif form.form_type == FormType.NSS:
-                summary.nss.append(
-                self._nss.extract(form)
-            )
+                case FormType.MATERNAL:
+                    summary.maternal = self._maternal.extract(form)
+
+                case FormType.DCM:
+                    summary.dcm.append(
+                        self._dcm.extract(form)
+                    )
+
+                case FormType.NSS:
+                    summary.nss.append(
+                        self._nss.extract(form)
+                    )
+
+                case _:
+                    # Ignore unknown/attachment forms
+                    pass
 
         return summary

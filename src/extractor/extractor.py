@@ -54,6 +54,8 @@ class Extractor:
                 )
 
             elif form.form_type == FormType.NSS:
-                summary.nss = self._nss.extract(form)
+                summary.nss.append(
+                self._nss.extract(form)
+            )
 
         return summary

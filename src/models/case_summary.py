@@ -54,9 +54,9 @@ class CaseSummary(BaseModel):
         description="Daily Clinical Monitoring records.",
     )
 
-    nss: NSSData | None = Field(
-        default=None,
-        description="Neonatal Sepsis Surveillance data.",
+    nss: list[NSSData] = Field(
+        default_factory=list,
+        description="Neonatal Sepsis Screening records.",
     )
 
     # ---------- Derived Information ----------

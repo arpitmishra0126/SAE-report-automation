@@ -35,3 +35,7 @@ Thumbs.db
 # Data (optional if large/sensitive)
 data/sample_pdfs/
 data/outputs/
+
+# Virtual environments
+.venv/
+.venv310/

@@ -31,7 +31,6 @@ class FormDetector:
             "Neonatal Sepsis Surveillance",
         ),
 
-        # Standalone SAE form only
         FormType.SAE: (
             "Serious Adverse Event\nRecord ID",
             "Serious Adverse Event\r\nRecord ID",
@@ -43,6 +42,15 @@ class FormDetector:
             "Laboratory Investigations",
         ),
     }
+
+    def _safe_console(self, text: str) -> str:
+        """
+        Convert text into something Windows console can always print.
+        """
+        return (
+            text.encode("cp1252", errors="replace")
+            .decode("cp1252")
+        )
 
     def segment(
         self,
@@ -62,16 +70,13 @@ class FormDetector:
 
             detected = self._detect_form_type(page)
 
-            title = (
-                page.text.splitlines()[0]
-                if page.text.strip()
-                else "<EMPTY>"
-            )
+            preview = page.text[:60]
+            preview = self._safe_console(preview)
 
             print(
                 f"Page {page.page_number:03d} | "
                 f"{detected.name:<10} | "
-                f"{title[:90]}"
+                f"{preview}"
             )
 
             if detected != FormType.UNKNOWN:
@@ -119,21 +124,14 @@ class FormDetector:
     ) -> FormType:
 
         text = page.text
-
         lower = text.casefold()
 
-        # -----------------------------
-        # Reject NSS subsection first
-        # -----------------------------
         if (
             "adverse skin events and serious adverse events screening"
             in lower
         ):
             return FormType.UNKNOWN
 
-        # -----------------------------
-        # Detect standalone SAE form
-        # -----------------------------
         if (
             "serious adverse event" in lower
             and "record id" in lower
@@ -141,16 +139,12 @@ class FormDetector:
         ):
             return FormType.SAE
 
-        # -----------------------------
-        # Other forms
-        # -----------------------------
         for form_type, signatures in self.FORM_SIGNATURES.items():
 
             if form_type == FormType.SAE:
                 continue
 
             for signature in signatures:
-
                 if signature.casefold() in lower:
                     return form_type
 

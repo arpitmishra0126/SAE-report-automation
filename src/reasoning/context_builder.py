@@ -18,30 +18,39 @@ from .patient_record import PatientRecord
 
 class ContextBuilder:
 
-    def __init__(self):
-        self.context: Dict[str, Any] = {
-            "patient": {},
-            "clinical_story": {},
-            "metadata": {}
-        }
-
     def build(self, record: PatientRecord) -> Dict[str, Any]:
+        """
+        Build a structured reasoning context from a PatientRecord.
+        """
 
         data = deepcopy(record.to_dict())
 
-        self.context["patient"] = data
+        context = {
+            "patient": {
+                "patient": data.get("patient", {}),
+                "maternal": data.get("maternal", {})
+            },
 
-        self.context["clinical_story"] = {
-            "events": [],
-            "diagnoses": [],
-            "treatments": [],
-            "investigations": [],
-            "observations": [],
-            "outcome": {},
-            "missing_information": [],
-            "quality_flags": []
+            "clinical_story": {
+
+                # Raw extracted forms
+                "sae": data.get("sae", {}),
+                "daily_clinical_monitoring": data.get("dcm", []),
+                "neonatal_sepsis": data.get("nss", []),
+                "laboratory_findings": data.get("lab", []),
+
+                # AI-friendly sections (initially empty)
+                "events": [],
+                "diagnoses": [],
+                "treatments": [],
+                "investigations": [],
+                "observations": [],
+                "outcome": {},
+                "missing_information": [],
+                "quality_flags": []
+            },
+
+            "metadata": data.get("metadata", {})
         }
 
-        self.context["metadata"] = data.get("metadata", {})
-
-        return self.context
+        return context

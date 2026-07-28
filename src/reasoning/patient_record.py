@@ -12,10 +12,20 @@ from typing import Any, Dict, List
 
 
 class PatientRecord:
+    """
+    Unified AI-ready representation of a patient's complete case.
+
+    This class serves as the bridge between the extraction pipeline
+    (CaseSummary) and the reasoning pipeline (ContextBuilder -> LLM).
+    """
 
     def __init__(self):
 
         self.data = {
+
+            # ----------------------------
+            # Core extracted forms
+            # ----------------------------
 
             "patient": {},
 
@@ -29,12 +39,24 @@ class PatientRecord:
 
             "lab": [],
 
+            # ----------------------------
+            # Derived application data
+            # ----------------------------
+
+            "timeline": [],
+
+            "validation_messages": [],
+
+            # ----------------------------
+            # Metadata
+            # ----------------------------
+
             "metadata": {}
         }
 
-    # ----------------------------
-    # Basic setters
-    # ----------------------------
+    # ==========================================================
+    # Core extracted data
+    # ==========================================================
 
     def set_patient(self, patient: Dict[str, Any]):
 
@@ -60,18 +82,34 @@ class PatientRecord:
 
         self.data["lab"].append(lab)
 
+    # ==========================================================
+    # Derived data
+    # ==========================================================
+
+    def set_timeline(self, timeline: List[Any]):
+
+        self.data["timeline"] = timeline
+
+    def set_validation_messages(self, messages: List[str]):
+
+        self.data["validation_messages"] = messages
+
+    # ==========================================================
+    # Metadata
+    # ==========================================================
+
     def set_metadata(self, metadata: Dict[str, Any]):
 
         self.data["metadata"] = metadata
 
-    # ----------------------------
+    # ==========================================================
     # Access
-    # ----------------------------
+    # ==========================================================
 
-    def to_dict(self):
+    def to_dict(self) -> Dict[str, Any]:
 
         return self.data
 
-    def get(self):
+    def get(self) -> Dict[str, Any]:
 
         return self.data

@@ -23,7 +23,6 @@ class OCRProcessor:
         self.ocr = PaddleOCR(
             use_angle_cls=False,
             lang="en",
-            show_log=False,
         )
 
     def extract(self, page: fitz.Page) -> str:
@@ -45,19 +44,29 @@ class OCRProcessor:
         pix.save(str(image_path))
 
         try:
-            result = self.ocr.ocr(
-                str(image_path),
-                cls=False,
-            )
+            # PaddleOCR 3.x
+            result = self.ocr.ocr(str(image_path))
 
             lines: list[str] = []
 
-            if result and result[0]:
-                for item in result[0]:
-                    if len(item) >= 2:
-                        text = item[1][0]
-                        if text:
-                            lines.append(text.strip())
+            if result:
+                for page_result in result:
+
+                    if not page_result:
+                        continue
+
+                    for item in page_result:
+
+                        try:
+                            # Standard OCR output
+                            text = item[1][0]
+
+                            if text:
+                                lines.append(text.strip())
+
+                        except (IndexError, TypeError):
+                            # Ignore unexpected structures
+                            continue
 
             return "\n".join(lines)
 

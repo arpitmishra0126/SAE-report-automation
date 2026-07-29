@@ -7,6 +7,7 @@ from .sae import SAEData
 from .maternal import MaternalData
 from .dcm import DCMData
 from .nss import NSSData
+from .lab import LabData
 
 __all__ = [
     "CaseSummary",
@@ -14,4 +15,5 @@ __all__ = [
     "MaternalData",
     "DCMData",
     "NSSData",
+    "LabData",
 ]

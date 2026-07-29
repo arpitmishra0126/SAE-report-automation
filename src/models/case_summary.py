@@ -25,6 +25,7 @@ from .sae import SAEData
 from .maternal import MaternalData
 from .dcm import DCMData
 from .nss import NSSData
+from .lab import LabData
 
 
 class CaseSummary(BaseModel):
@@ -57,6 +58,11 @@ class CaseSummary(BaseModel):
     nss: list[NSSData] = Field(
         default_factory=list,
         description="Neonatal Sepsis Screening records.",
+    )
+
+    lab: list[LabData] = Field(
+        default_factory=list,
+        description="Standalone laboratory report records.",
     )
 
     # ---------- Derived Information ----------

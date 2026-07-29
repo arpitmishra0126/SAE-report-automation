@@ -20,7 +20,7 @@ from src.pdf_processor import PDFExtractor
 # Configuration
 # ---------------------------------------------------------------------
 
-PDF_PATH = Path("data/sample_pdfs/307-9-merged-merged-compressed.pdf")
+PDF_PATH = Path("data/sample_pdfs/6_311_231_BHU_merged-merged-compressed.pdf")
 
 OUTPUT_DIR = Path("outputs")
 OUTPUT_FILE = OUTPUT_DIR / "307-9-extracted.txt"

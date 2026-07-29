@@ -77,8 +77,3 @@ mypy>=1.17.0
 # anthropic
 # openai
 
-# Virtual environments
-.venv/
-.venv310/
-venv/
-test_env/

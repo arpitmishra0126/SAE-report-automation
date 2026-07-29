@@ -6,7 +6,7 @@ from __future__ import annotations
 
 import time
 
-from src.reasoning.prompts import JSON_SCHEMA
+from reasoning.prompts import JSON_SCHEMA
 from ollama import Client, ResponseError
 
 # ---------------------------------------------------------------------

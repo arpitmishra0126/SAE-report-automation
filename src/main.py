@@ -170,7 +170,7 @@ class SAEPipeline:
 def main() -> None:
 
     pdf = Path(
-        "data\\sample_pdfs\\307-9-merged-merged-compressed.pdf"
+        pdf = Path("data") / "sample_pdfs" / "307-9-merged-merged-compressed.pdf"
     )
 
     pipeline = SAEPipeline()

@@ -72,3 +72,9 @@ data/outputs/
 # Model / Cache
 # ----------------------------------------------------
 .cache/
+
+# Virtual environments
+.venv/
+.venv310/
+venv/
+test_env/

@@ -76,3 +76,9 @@ mypy>=1.17.0
 # LLM
 # anthropic
 # openai
+
+# Virtual environments
+.venv/
+.venv310/
+venv/
+test_env/

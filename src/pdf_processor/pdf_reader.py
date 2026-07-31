@@ -17,6 +17,7 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any, cast
 from .ocr_processor import OCRProcessor
+from .layout import needs_row_reconstruction, reconstruct_reading_order
 
 
 import fitz
@@ -92,6 +93,25 @@ class PDFReader:
 
         # If enough text exists, return it
         if len(text) > 20:
+
+            # Plain stream-order text matches visual reading order on
+            # every REDCap form page this pipeline handles, and all
+            # existing extraction logic is tuned against exactly that
+            # output — leave it untouched. Only on a genuine
+            # multi-column table page (a pathology report) does the
+            # stream order actually fail to keep a row's label/value/
+            # reference together; reconstruct from word coordinates
+            # only in that case.
+            words = cast(list[Any], page.get_text("words"))
+            items = [(w[0], w[1], w[2], w[3], w[4]) for w in words]
+
+            if needs_row_reconstruction(items):
+
+                reconstructed = reconstruct_reading_order(items)
+
+                if reconstructed.strip():
+                    return reconstructed
+
             return text
 
     # Otherwise use OCR fallback

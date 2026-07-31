@@ -2,9 +2,44 @@
 Form segmentation engine.
 
 Groups consecutive PDF pages into logical REDCap forms.
+
+--------------------------------------------------------------------
+Continuation rule (how pages are grouped into one Form)
+--------------------------------------------------------------------
+Each page is classified independently as either a strong match for
+one specific FormType, or UNKNOWN.
+
+- A strong match always starts a *new* Form, even if the previous
+  page was the same type (e.g. two separate NSS submissions for
+  different days are kept as two Forms, not merged) — with one
+  exception: consecutive LAB-type strong matches are merged into the
+  same Form, since a multi-page pathology report typically re-clears
+  the LAB score on every page (each page is independently dense with
+  test names/values), unlike a REDCap form's title page.
+- An UNKNOWN page is treated as a continuation of whatever Form is
+  currently open and is appended to it. This is deliberate: REDCap's
+  PDF export repeats a full page header only on a form's first page,
+  so pages 2..N of the same submission (and pages of a multi-page
+  attachment such as a scanned lab report) legitimately carry no
+  detectable signature of their own. There is no per-pair "is this
+  really a continuation" check beyond that — the strong/weak
+  distinction above *is* the continuation rule. Pages before the
+  first strong match remain an UNKNOWN form (e.g. a cover page).
+
+Because "UNKNOWN attaches to whatever is currently open" is the whole
+continuation mechanism, a signature that fires as a false positive
+mid-form (e.g. a REDCap question that merely *mentions* the word
+"laboratory") doesn't just mislabel one page — it fractures the
+current form and starts misrouting subsequent UNKNOWN pages into the
+wrong Form. Signatures must therefore be conservative: specific
+enough that they only fire on a genuine new form/attachment, never on
+a passing mention inside another form's content. See
+`_looks_like_redcap_page` / `_looks_like_lab_report` below.
 """
 
 from __future__ import annotations
+
+import re
 
 from pdf_processor.page import PageData
 
@@ -36,12 +71,72 @@ class FormDetector:
             "Serious Adverse Event\r\nRecord ID",
             "Serious Adverse Event Record ID",
         ),
-
-        FormType.LAB: (
-            "Laboratory",
-            "Laboratory Investigations",
-        ),
     }
+
+    # Markers that only ever appear on a REDCap-native page (the
+    # "* must provide value" field marker, the REDCap footer/URL, or
+    # a numbered REDCap question). Any page carrying one of these is
+    # part of a REDCap form submission, never a standalone uploaded
+    # lab report — regardless of what words it happens to contain.
+    _REDCAP_MARKERS = re.compile(
+        r"must provide value|redcap|record id\s*\n?\s*\d",
+        flags=re.IGNORECASE,
+    )
+
+    # Requires whitespace around the dash ("16 - What was...") so it
+    # doesn't false-positive on a bare numeric range like "0-12" in a
+    # lab report's reference-interval column.
+    _NUMBERED_QUESTION = re.compile(
+        r"^\s*\d+(?:\.\d+)?\s+[-–]\s+\S", re.MULTILINE
+    )
+
+    # Vocabulary and structural cues of a standalone pathology report.
+    # No single one is sufficient on its own (several are common
+    # English words); a page must clear a minimum combined score.
+    _LAB_TEST_KEYWORDS = (
+        "hemoglobin", "haemoglobin", "leucocyte", "leukocyte",
+        "platelet", "neutrophil", "bilirubin", "creatinine",
+        "electrolyte", "sodium", "potassium", "calcium", "albumin",
+        "globulin", "urea", "c-reactive protein", "crp",
+        "pathology", "biochemistry", "hematology", "haematology",
+    )
+
+    _LAB_STRUCTURAL_KEYWORDS = (
+        "observed value", "biological ref", "reference range",
+        "reference interval", "normal range", "reg/ref", "lab no",
+        "accession", "collected at", "requested test",
+        "for pathologist", "end of report", "investigation report",
+    )
+
+    _LAB_MIN_SCORE = 3
+
+    @classmethod
+    def _looks_like_redcap_page(cls, lower_text: str, raw_text: str) -> bool:
+        return (
+            cls._REDCAP_MARKERS.search(lower_text) is not None
+            or cls._NUMBERED_QUESTION.search(raw_text) is not None
+        )
+
+    @classmethod
+    def _looks_like_lab_report(cls, lower_text: str, raw_text: str) -> bool:
+
+        if cls._looks_like_redcap_page(lower_text, raw_text):
+            # A REDCap question mentioning "laboratory tests" (e.g.
+            # "Please upload the PDF of laboratory tests...") is not
+            # itself a lab report.
+            return False
+
+        score = 0
+
+        for keyword in cls._LAB_TEST_KEYWORDS:
+            if keyword in lower_text:
+                score += 1
+
+        for keyword in cls._LAB_STRUCTURAL_KEYWORDS:
+            if keyword in lower_text:
+                score += 2
+
+        return score >= cls._LAB_MIN_SCORE
 
     def _safe_console(self, text: str) -> str:
         """
@@ -79,7 +174,20 @@ class FormDetector:
                 f"{preview}"
             )
 
-            if detected != FormType.UNKNOWN:
+            if (
+                detected == FormType.LAB
+                and current_type == FormType.LAB
+            ):
+                # Unlike REDCap forms (where two consecutive strong
+                # matches of the same type are genuinely two separate
+                # submissions), a multi-page pathology report tends to
+                # re-clear the LAB score on *every* page — each page
+                # is independently dense with test names. Treat a
+                # LAB page immediately following another LAB page as
+                # the same report continuing, not a new one.
+                current_pages.append(page)
+
+            elif detected != FormType.UNKNOWN:
 
                 if current_pages:
                     forms.append(
@@ -147,5 +255,8 @@ class FormDetector:
             for signature in signatures:
                 if signature.casefold() in lower:
                     return form_type
+
+        if self._looks_like_lab_report(lower, text):
+            return FormType.LAB
 
         return FormType.UNKNOWN

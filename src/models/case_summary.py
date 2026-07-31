@@ -79,6 +79,14 @@ class CaseSummary(BaseModel):
         description="Validation warnings or missing-field messages.",
     )
 
+    skipped_forms: list[str] = Field(
+        default_factory=list,
+        description=(
+            "Detected forms that were not extracted, with the reason "
+            "why (e.g. no extractor registered for that form type)."
+        ),
+    )
+
     # ---------- Metadata ----------
 
     source_pdf: str | None = Field(

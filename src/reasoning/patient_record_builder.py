@@ -42,6 +42,9 @@ class PatientRecordBuilder:
         for nss in summary.nss:
             record.add_nss(nss.model_dump())
 
+        for lab in summary.lab:
+            record.add_lab(lab.model_dump())
+
         # --------------------------------------------------
         # Derived application data
         # --------------------------------------------------

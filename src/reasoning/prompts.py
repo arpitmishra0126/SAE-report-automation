@@ -75,6 +75,29 @@ for deviation.
     the Patient Context JSON. If you cannot point to the source field,
     do not write the value.
 
+=== SOURCE DATA HYGIENE (the Patient Context can still contain noise) ===
+19. The Patient Context comes from OCR/PDF text extraction of scanned
+    REDCap forms. Most extraction noise has already been filtered out
+    upstream, but treat any of the following, if you see it, as noise
+    to be dropped rather than clinical content:
+    - A question, instruction, or list of answer choices (e.g. text
+      ending in "?" with no clear single answer, or a comma/newline
+      separated list of every option a checkbox question offered).
+    - A PDF viewer artifact: a timestamp ("3/14/26, 3:58 PM"), a page
+      fraction ("2/3"), a URL, or a form/header title repeated
+      verbatim ("ICMR Emollient - Main | REDCap").
+    - A bracketed translation fragment, complete or truncated (e.g.
+      "[प्रसव", "[नवजात की वर्तमान...").
+    - A field value that is obviously a mis-mapped label rather than
+      a result (e.g. a "culture_result" that is actually a date/time
+      stamp).
+20. Never copy a question, an instruction, or a full list of checkbox
+    options into an output field — only ever a single selected value,
+    a measurement, or a short narrative built from such values.
+21. If, after filtering the above, nothing genuine remains for a
+    field, leave it empty ("" or []) — do not substitute the noise
+    itself just to avoid an empty field.
+
 === SELF-CHECK BEFORE EMITTING (perform silently, do not print) ===
 - Does my response start with '{' and end with '}' with nothing else?
 - Is every key from the required schema present?

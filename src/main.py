@@ -195,6 +195,17 @@ def main() -> None:
 
             print("\nNo validation issues detected.")
 
+        if summary.skipped_forms:
+
+            print("\nSkipped Forms (no extractor / unclassified):")
+
+            for message in summary.skipped_forms:
+                print(f" - {message}")
+
+        else:
+
+            print("\nNo forms were skipped.")
+
         print("\nDOCX generated successfully.")
 
         print("\n" + "=" * 80)

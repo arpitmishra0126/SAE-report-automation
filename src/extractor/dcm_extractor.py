@@ -50,8 +50,27 @@ class DCMExtractor(BaseExtractor[DCMData]):
         )
 
         # -------------------------------------------------
+        # Discharge / Bed Sharing
+        # -------------------------------------------------
+
+        data.discharged_or_referred = self._parser.get_bool(
+            text,
+            "Is the baby discharged/referred out",
+        )
+
+        data.bed_sharing = self._parser.get_bool(
+            text,
+            "Was the baby sharing bed with other babies?",
+        )
+
+        # -------------------------------------------------
         # Baby Weight
         # -------------------------------------------------
+
+        data.weight_taken = self._parser.get_bool(
+            text,
+            "Have you taken the weight of the newborn?",
+        )
 
         weight = self._parser.get_number(
             text,
@@ -62,23 +81,52 @@ class DCMExtractor(BaseExtractor[DCMData]):
             data.weight = float(weight)
 
         # -------------------------------------------------
-        # Medication
+        # Support / interventions
         # -------------------------------------------------
+
+        data.on_incubator_support = self._parser.get_bool(
+            text,
+            "Is the newborn kept on incubator support?",
+        )
+
+        data.on_medications = self._parser.get_bool(
+            text,
+            "Is the newborn being prescribed any medications?",
+        )
 
         data.medications = self._parser.get_multiline_value(
             text,
-            "Please check the file and state all the medicines the newborn is being prescribed.",
+            "newborn is being prescribed.",
             "Section F",
         )
+
+        data.kmc_provided = self._parser.get_bool(
+            text,
+            "Has Kangaroo Mother Care (KMC) been provided to",
+        )
+
+        # "If No KMC, please specify the reason" is an unticked
+        # multi-select checkbox question — the tick mark is a graphic,
+        # not text, so it is not recoverable from the text layer.
 
         # -------------------------------------------------
         # Feeding
         # -------------------------------------------------
 
-        data.feeding = self._parser.get_multiline_value(
+        # "What was the newborn fed..." and "How was the feed
+        # provided..." are also unticked checkbox questions and are
+        # not recoverable — dumping their unmarked option list into
+        # feed_types/feed_route would fabricate an answer, so they
+        # are left unset.
+
+        data.enteral_feed_ml = self._parser.get_float(
             text,
-            "What was the newborn fed in the last 24 hours?",
-            "Section H",
+            "Enteral feeds in last 24 hours",
+        )
+
+        data.total_fluid_intake_ml = self._parser.get_float(
+            text,
+            "Total Fluid Intake in ml in last 24 hours",
         )
 
         # -------------------------------------------------

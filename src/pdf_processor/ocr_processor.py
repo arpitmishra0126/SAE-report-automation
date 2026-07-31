@@ -12,6 +12,8 @@ from pathlib import Path
 import fitz
 from paddleocr import PaddleOCR
 
+from .layout import needs_row_reconstruction, reconstruct_reading_order
+
 
 class OCRProcessor:
     """
@@ -48,6 +50,7 @@ class OCRProcessor:
             result = self.ocr.ocr(str(image_path))
 
             lines: list[str] = []
+            items: list[tuple[float, float, float, float, str]] = []
 
             if result:
                 for page_result in result:
@@ -59,14 +62,38 @@ class OCRProcessor:
 
                         try:
                             # Standard OCR output
+                            box = item[0]
                             text = item[1][0]
 
-                            if text:
-                                lines.append(text.strip())
+                            if not text:
+                                continue
+
+                            text = text.strip()
+                            lines.append(text)
+
+                            xs = [point[0] for point in box]
+                            ys = [point[1] for point in box]
+
+                            items.append(
+                                (min(xs), min(ys), max(xs), max(ys), text)
+                            )
 
                         except (IndexError, TypeError):
                             # Ignore unexpected structures
                             continue
+
+            # A scanned multi-column table (e.g. a pathology report
+            # photographed/scanned directly, with no embedded PDF
+            # text layer) needs the same row reconstruction as a
+            # native-text table page. A normal single-column scanned
+            # page keeps the existing plain top-to-bottom join
+            # unchanged.
+            if items and needs_row_reconstruction(items):
+
+                reconstructed = reconstruct_reading_order(items)
+
+                if reconstructed.strip():
+                    return reconstructed
 
             return "\n".join(lines)
 

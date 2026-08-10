@@ -160,6 +160,7 @@ class SAEPipeline:
         self._builder.build(
             summary,
             output_path,
+            clinical_report=clinical_report,
         )
 
         print("✓ DOCX generated")

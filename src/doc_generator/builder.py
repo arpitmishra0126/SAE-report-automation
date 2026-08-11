@@ -229,7 +229,8 @@ def _join_sentences(sentences: list[str]) -> str:
 def _paragraph(document: DocxDocument, text: str, *, italic: bool = False):
 
     paragraph = document.add_paragraph(text)
-    paragraph.paragraph_format.space_after = Pt(10)
+    paragraph.paragraph_format.space_after = Pt(4)
+    paragraph.paragraph_format.line_spacing = 1.08
 
     if italic and paragraph.runs:
         paragraph.runs[0].italic = True
@@ -237,10 +238,7 @@ def _paragraph(document: DocxDocument, text: str, *, italic: bool = False):
     return paragraph
 
 
-def _section_heading(document: DocxDocument, text: str, *, page_break: bool = False) -> None:
-
-    if page_break:
-        document.add_page_break()
+def _section_heading(document: DocxDocument, text: str) -> None:
 
     document.add_heading(text, level=1)
 
@@ -271,7 +269,7 @@ def _title_block(document: DocxDocument, summary: CaseSummary) -> None:
 
     subtitle = document.add_paragraph("Clinical Case Narrative")
     subtitle.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    subtitle.paragraph_format.space_after = Pt(16)
+    subtitle.paragraph_format.space_after = Pt(8)
 
     if subtitle.runs:
         subtitle.runs[0].bold = True
@@ -579,27 +577,6 @@ def _ventilation_level(nss: NSSData | None) -> int | None:
     return None
 
 
-_VENTILATION_LABELS = {
-    0: "was not on ventilatory support",
-    1: "was on non-invasive ventilatory support",
-    2: "was on invasive mechanical ventilation",
-}
-
-
-def _ventilation_clause(level: int | None, previous: int | None) -> str | None:
-
-    if level is None:
-        return None
-
-    if previous is None or previous == level:
-        return f"The infant {_VENTILATION_LABELS[level]}."
-
-    if level > previous:
-        return f"The infant required escalation of respiratory support: {_VENTILATION_LABELS[level]}."
-
-    return f"Respiratory support was de-escalated; the infant {_VENTILATION_LABELS[level]}."
-
-
 _SEPSIS_PATTERNS: list[tuple[int, tuple[str, ...]]] = [
     (2, ("confirmed sepsis",)),
     (1, ("probable sepsis", "suspected sepsis")),
@@ -623,7 +600,32 @@ def _sepsis_rank(text: str | None) -> int | None:
     return None
 
 
-def _sepsis_clause(text: str | None, previous_rank: int | None) -> str | None:
+# Compact labels for table cells (the narrative sentence forms above
+# read naturally in prose but are too verbose repeated in every row).
+_VENTILATION_LABELS_SHORT = {
+    0: "Not on ventilatory support",
+    1: "On non-invasive ventilatory support",
+    2: "On invasive mechanical ventilation",
+}
+
+
+def _ventilation_cell_clause(level: int | None, previous: int | None) -> str | None:
+
+    if level is None:
+        return None
+
+    label = _VENTILATION_LABELS_SHORT[level]
+
+    if previous is not None and level > previous:
+        return f"{label} (escalated)"
+
+    if previous is not None and level < previous:
+        return f"{label} (de-escalated)"
+
+    return label
+
+
+def _sepsis_cell_clause(text: str | None, previous_rank: int | None) -> str | None:
 
     if not text:
         return None
@@ -631,160 +633,161 @@ def _sepsis_clause(text: str | None, previous_rank: int | None) -> str | None:
     rank = _sepsis_rank(text)
 
     if rank is None:
-        return f"The clinician's sepsis impression was recorded as {text}."
+        return f"Sepsis impression: {text}"
+
+    suffix = ""
 
     if previous_rank is not None and rank > previous_rank:
-        return f"The clinician's sepsis impression escalated to {_SEPSIS_LABELS[rank]}."
+        suffix = " (escalated)"
+    elif previous_rank is not None and rank < previous_rank:
+        suffix = " (improved)"
 
-    if previous_rank is not None and rank < previous_rank:
-        return f"The clinician's sepsis impression improved to {_SEPSIS_LABELS[rank]}."
-
-    return f"The clinician's sepsis impression remained {_SEPSIS_LABELS[rank]}."
+    return f"Sepsis impression: {_SEPSIS_LABELS[rank]}{suffix}"
 
 
-def _day_sentences(
-    dcm: DCMData | None,
+def _dcm_cell_text(dcm: DCMData | None) -> str:
+    """
+    Synthesized (not raw-dumped) Daily Clinical Monitoring cell
+    content for one day's table row.
+    """
+
+    if dcm is None:
+        return "No DCM record for this day."
+
+    clauses: list[str] = []
+
+    if _field(dcm, "vital_status"):
+        clauses.append(_field(dcm, "vital_status"))
+
+    if dcm.weight is not None:
+        clauses.append(f"Wt {_clean(dcm.weight)} g")
+    elif dcm.weight_taken is False:
+        reason = _field(dcm, "weight_not_taken_reason")
+        clauses.append("Weight not recorded" + (f" ({reason})" if reason else ""))
+
+    if dcm.on_incubator_support is True:
+        clauses.append("On incubator support")
+    elif dcm.on_incubator_support is False:
+        clauses.append("Not on incubator support")
+
+    if _field(dcm, "medications"):
+        clauses.append(f"Meds: {_field(dcm, 'medications')}")
+
+    feed_bits = []
+
+    if _field(dcm, "feed_types"):
+        feed_bits.append(_field(dcm, "feed_types"))
+
+    if _field(dcm, "feed_route"):
+        feed_bits.append(f"via {_field(dcm, 'feed_route')}")
+
+    if dcm.enteral_feed_ml is not None:
+        feed_bits.append(f"{_clean(dcm.enteral_feed_ml)} ml enteral")
+
+    if dcm.total_fluid_intake_ml is not None:
+        feed_bits.append(f"total fluid {_clean(dcm.total_fluid_intake_ml)} ml")
+
+    if feed_bits:
+        clauses.append("Feeds: " + ", ".join(feed_bits))
+
+    if dcm.kmc_provided is True:
+        clauses.append("KMC provided")
+    elif dcm.kmc_provided is False:
+        reason = _field(dcm, "kmc_not_provided_reason")
+        clauses.append("No KMC" + (f" ({reason})" if reason else ""))
+
+    remark = _clean_remark(_field(dcm, "remarks"))
+
+    if remark:
+        clauses.append(f"Remark: {remark}")
+
+    return _join_sentences(clauses) if clauses else "No further DCM details recorded."
+
+
+def _nss_cell_text(
     nss: NSSData | None,
     previous_ventilation: int | None,
     previous_sepsis_rank: int | None,
-) -> tuple[list[str], int | None, int | None]:
+) -> tuple[str, int | None, int | None]:
+    """
+    Synthesized Neonatal Sepsis Screening cell content for one day's
+    table row, plus the running ventilation/sepsis state so the next
+    day's row can show genuine progression.
+    """
 
-    sentences: list[str] = []
+    if nss is None:
+        return "No NSS record for this day.", previous_ventilation, previous_sepsis_rank
 
-    # Status headline
-    status_bits = []
+    clauses: list[str] = []
 
-    if _field(dcm, "vital_status"):
-        status_bits.append(f"documented as {_field(dcm, 'vital_status')}")
-
-    if dcm and dcm.weight is not None:
-        status_bits.append(f"weighing {_clean(dcm.weight)} g")
-
-    if status_bits:
-        sentences.append("The infant was " + " and ".join(status_bits) + ".")
-
-    # Respiratory support, with progression phrasing
-    ventilation_level = _ventilation_level(nss)
-    vent_clause = _ventilation_clause(ventilation_level, previous_ventilation)
-
-    if vent_clause:
-        sentences.append(vent_clause)
-
-    support_bits = []
-
-    if dcm and dcm.on_incubator_support:
-        support_bits.append("incubator support")
-
-    if nss and nss.on_radiant_warmer:
-        support_bits.append("a radiant warmer")
-
-    if support_bits:
-        sentences.append("The infant was managed with " + " and ".join(support_bits) + ".")
-
-    if dcm and dcm.kmc_provided:
-        sentences.append("Kangaroo Mother Care was provided.")
-    elif dcm and dcm.kmc_provided is False:
-        reason = _field(dcm, "kmc_not_provided_reason")
-        sentences.append(
-            "Kangaroo Mother Care was withheld" + (f" ({reason})" if reason else "") + "."
-        )
-
-    # Medications
-    if _field(dcm, "medications"):
-        sentences.append(f"Medications administered included {_field(dcm, 'medications')}.")
-
-    # Feeding
-    feeding_bits = []
-
-    if _field(dcm, "feed_types"):
-        feeding_bits.append(_field(dcm, "feed_types"))
-
-    if _field(dcm, "feed_route"):
-        feeding_bits.append(f"via {_field(dcm, 'feed_route')}")
-
-    quantity_bits = []
-
-    if dcm and dcm.enteral_feed_ml is not None:
-        quantity_bits.append(f"enteral feeds {_clean(dcm.enteral_feed_ml)} ml")
-
-    if dcm and dcm.total_fluid_intake_ml is not None:
-        quantity_bits.append(f"total fluid intake {_clean(dcm.total_fluid_intake_ml)} ml")
-
-    if feeding_bits or quantity_bits:
-        clause = "Feeding: "
-        if feeding_bits:
-            clause += " ".join(feeding_bits)
-        if quantity_bits:
-            clause += ("; " if feeding_bits else "") + ", ".join(quantity_bits)
-        sentences.append(clause + ".")
-
-    # Vitals
     vitals_bits = []
 
-    if nss and nss.temperature is not None:
+    if nss.temperature is not None:
         unit = _field(nss, "temperature_unit") or "°C"
-        vitals_bits.append(f"temperature {_clean(nss.temperature)}{unit if unit.startswith('°') else ' ' + unit}")
+        vitals_bits.append(f"Temp {_clean(nss.temperature)}{unit if unit.startswith('°') else ' ' + unit}")
 
-    if nss and nss.spo2 is not None:
+    if nss.spo2 is not None:
         vitals_bits.append(f"SpO₂ {_clean(nss.spo2)}%")
 
-    if nss and nss.pulse_rate is not None:
-        vitals_bits.append(f"heart rate {_clean(nss.pulse_rate)} bpm")
+    if nss.pulse_rate is not None:
+        vitals_bits.append(f"HR {_clean(nss.pulse_rate)} bpm")
 
-    if nss and nss.respiratory_rate is not None:
+    if nss.respiratory_rate is not None:
         rr = _field(nss, "respiratory_rate")
-        if rr:
-            vitals_bits.append(f"respiratory rate {rr}/min")
-        else:
-            vitals_bits.append(
-                "respiratory rate not assessable while ventilated (the source form "
-                "recorded a non-measurable placeholder value)"
-            )
+        vitals_bits.append(f"RR {rr}/min" if rr else "RR not assessable (placeholder value in source form)")
 
     if vitals_bits:
-        sentences.append("Vital parameters recorded: " + ", ".join(vitals_bits) + ".")
+        clauses.append(", ".join(vitals_bits))
+
+    if nss.on_radiant_warmer:
+        clauses.append("Radiant warmer")
+
+    ventilation_level = _ventilation_level(nss)
+    vent_clause = _ventilation_cell_clause(ventilation_level, previous_ventilation)
+
+    if vent_clause:
+        clauses.append(vent_clause)
 
     abnormal_bits = []
 
-    if nss:
-        for flag, label in [
-            ("tachycardia", "tachycardia"),
-            ("bradycardia", "bradycardia"),
-            ("fast_breathing", "fast breathing"),
-            ("bradypnea", "bradypnea"),
-            ("high_temperature_flag", "high temperature"),
-            ("low_temperature_flag", "low body temperature"),
-            ("bleeding_observed", "bleeding"),
-            ("fontanelle_bulging", "a bulging fontanelle"),
-        ]:
-            if getattr(nss, flag, None):
-                abnormal_bits.append(label)
+    for flag, label in [
+        ("tachycardia", "tachycardia"),
+        ("bradycardia", "bradycardia"),
+        ("fast_breathing", "fast breathing"),
+        ("bradypnea", "bradypnea"),
+        ("high_temperature_flag", "high temperature"),
+        ("low_temperature_flag", "low body temperature"),
+        ("bleeding_observed", "bleeding"),
+        ("fontanelle_bulging", "bulging fontanelle"),
+    ]:
+        if getattr(nss, flag, None):
+            abnormal_bits.append(label)
 
     if abnormal_bits:
-        sentences.append("Clinically notable findings included " + ", ".join(abnormal_bits) + ".")
+        clauses.append(", ".join(abnormal_bits))
 
     exam_bits = []
 
     for field_name, label in [
         ("general_condition", "general condition"),
         ("cry_type", "cry"),
-        ("muscle_tone", "muscle tone"),
-        ("skin_colour", "skin colour"),
-        ("gi_signs", "GI findings"),
-        ("skin_umbilical_signs", "skin/umbilical findings"),
+        ("muscle_tone", "tone"),
+        ("skin_colour", "skin"),
+        ("gi_signs", "GI"),
+        ("skin_umbilical_signs", "skin/umbilical"),
     ]:
         value = _field(nss, field_name)
         if value:
             exam_bits.append(f"{label} {value}")
 
     if exam_bits:
-        sentences.append("On examination, " + ", ".join(exam_bits) + ".")
+        clauses.append(", ".join(exam_bits))
 
     sepsis_text = _field(nss, "sepsis_impression")
-    sepsis_clause = _sepsis_clause(sepsis_text, previous_sepsis_rank)
+    sepsis_clause = _sepsis_cell_clause(sepsis_text, previous_sepsis_rank)
 
     if sepsis_clause:
-        sentences.append(sepsis_clause)
+        clauses.append(sepsis_clause)
 
     new_sepsis_rank = _sepsis_rank(sepsis_text) if sepsis_text else previous_sepsis_rank
 
@@ -804,34 +807,35 @@ def _day_sentences(
             lab_bits.append(f"{label} {value} {unit}")
 
     if lab_bits:
-        sentences.append("Same-day laboratory parameters: " + ", ".join(lab_bits) + ".")
+        clauses.append("Labs: " + ", ".join(lab_bits))
 
-    remark_bits = []
+    remark = _clean_remark(_field(nss, "remarks"))
 
-    dcm_remark = _clean_remark(_field(dcm, "remarks"))
-    nss_remark = _clean_remark(_field(nss, "remarks"))
-
-    if dcm_remark:
-        remark_bits.append(dcm_remark)
-
-    if nss_remark and nss_remark != dcm_remark:
-        remark_bits.append(nss_remark)
-
-    if remark_bits:
-        sentences.append("Remarks: " + " ".join(remark_bits))
+    if remark:
+        clauses.append(f"Remark: {remark}")
 
     new_ventilation = ventilation_level if ventilation_level is not None else previous_ventilation
 
-    return sentences, new_ventilation, new_sepsis_rank
+    text = _join_sentences(clauses) if clauses else "No further NSS details recorded."
+
+    return text, new_ventilation, new_sepsis_rank
+
+
+def _set_cell_text(cell, text: str, *, bold: bool = False) -> None:
+
+    cell.text = text
+
+    for paragraph in cell.paragraphs:
+
+        paragraph.paragraph_format.space_after = Pt(2)
+
+        for run in paragraph.runs:
+            run.bold = bold
 
 
 def _section_daywise_course(document: DocxDocument, summary: CaseSummary) -> None:
 
-    _section_heading(
-        document,
-        "2. Day-wise Clinical Course: DCM & Neonatal Sepsis Screening",
-        page_break=True,
-    )
+    _section_heading(document, "2. Day-wise Clinical Course: DCM & Neonatal Sepsis Screening")
 
     days = _group_by_day(summary.dcm, summary.nss)
 
@@ -843,26 +847,34 @@ def _section_daywise_course(document: DocxDocument, summary: CaseSummary) -> Non
         )
         return
 
+    table = document.add_table(rows=1, cols=3)
+    table.style = "Light Grid Accent 1"
+    table.autofit = True
+
+    header_cells = table.rows[0].cells
+    _set_cell_text(header_cells[0], "Date", bold=True)
+    _set_cell_text(header_cells[1], "Daily Clinical Monitoring", bold=True)
+    _set_cell_text(header_cells[2], "Neonatal Sepsis Screening", bold=True)
+
     previous_ventilation: int | None = None
     previous_sepsis_rank: int | None = None
 
     for day_number, display_date, dcm, nss in days:
 
-        label = f"Day {day_number}"
+        date_label = f"Day {day_number}"
 
         if display_date:
-            label += f" ({display_date})"
+            date_label += f"\n({display_date})"
 
-        document.add_heading(label, level=2)
-
-        sentences, previous_ventilation, previous_sepsis_rank = _day_sentences(
-            dcm, nss, previous_ventilation, previous_sepsis_rank
+        dcm_text = _dcm_cell_text(dcm)
+        nss_text, previous_ventilation, previous_sepsis_rank = _nss_cell_text(
+            nss, previous_ventilation, previous_sepsis_rank
         )
 
-        _paragraph(
-            document,
-            _join_sentences(sentences) if sentences else "No further clinical details were recorded for this day.",
-        )
+        row_cells = table.add_row().cells
+        _set_cell_text(row_cells[0], date_label)
+        _set_cell_text(row_cells[1], dcm_text)
+        _set_cell_text(row_cells[2], nss_text)
 
 
 # --------------------------------------------------------------
@@ -922,7 +934,7 @@ def _lab_panel_sentence(panel_name: str, fields: list[tuple[str, str, str]], rec
 
 def _section_lab_findings(document: DocxDocument, summary: CaseSummary) -> None:
 
-    _section_heading(document, "3. Key Laboratory Findings", page_break=True)
+    _section_heading(document, "3. Key Laboratory Findings")
 
     rendered = False
 
@@ -1035,7 +1047,7 @@ def _last_known_status(nss_records: list[NSSData]) -> str | None:
 
 def _section_outcome(document: DocxDocument, summary: CaseSummary, clinical_report) -> None:
 
-    _section_heading(document, "4. In-hospital Death & Outcome", page_break=True)
+    _section_heading(document, "4. In-hospital Death & Outcome")
 
     sentences: list[str] = []
 
